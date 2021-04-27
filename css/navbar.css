@@ -1,0 +1,50 @@
+.nav-prueba{
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.navbar{
+    background-color: #171B29;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1% 0%;
+}
+nav img{
+    width: 10%;
+    height: auto;
+    margin-left: 5%;
+}
+.navbar ul{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+nav li{
+    list-style:none;
+    display: inline;
+    padding: 0% 2%;
+}
+nav a{
+    color: ghostwhite;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: solid;
+    border-color: transparent;
+}
+nav a:hover{
+    border-bottom: solid;
+    border-color: rgba(248, 248, 255, 0.438);
+}
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: ghostwhite;
+    font-size: 20px;
+    cursor: pointer;
+}
+.hamburger :focus{
+    outline: none;
+
+}
