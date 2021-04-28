@@ -3,12 +3,16 @@
   position: sticky;
   top: 0;
 }
+#navbar{
+    overflow: hidden;
+}
 .navbar{
-    background-color: #171B29;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 1% 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:transparent;
 }
 nav img{
     width: 10%;
@@ -23,8 +27,8 @@ nav img{
 }
 nav li{
     list-style:none;
-    display: inline;
-    padding: 0% 2%;
+    display: inline-block;
+    padding: 0rem 1.5rem;
 }
 nav a{
     color: ghostwhite;
@@ -37,6 +41,11 @@ nav a:hover{
     border-bottom: solid;
     border-color: rgba(248, 248, 255, 0.438);
 }
+
+nav a:active{
+    border-bottom: solid;
+    border-color: rgba(199, 211, 179, 0.438);
+}
 .hamburger{
     background-color: transparent;
     border: 0;
@@ -46,5 +55,15 @@ nav a:hover{
 }
 .hamburger :focus{
     outline: none;
-
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #191616;
+    
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
