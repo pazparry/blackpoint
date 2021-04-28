@@ -5,6 +5,7 @@
 }
 #navbar{
     overflow: hidden;
+    background-color:transparent;
 }
 .navbar{
     display: flex;

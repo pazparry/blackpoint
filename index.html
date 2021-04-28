@@ -9,6 +9,33 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1500, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -19,9 +46,9 @@
                 <i class="fas fa-bars"></i>
             </button>
             <ul id="navbar-ul" class="navbar ul">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="javiera.html">Javiera</a></li>
-                <li><a href="macarena.html">Macarena</a></li>
+                <li><a href="#header">Inicio</a></li>
+                <li><a href="#javiera">Javiera</a></li>
+                <li><a href="#macarena">Macarena</a></li>
                 <li><a href="nicolas.html">Nicolás</a></li>
                 <li><a href="paz.html">Paz</a></li>
                 <li><a href="sofia.html">Sofía</a></li>
@@ -29,11 +56,49 @@
         </nav>
     </div>
     <header>
-        <div class="header"></div>
+        <div class="header" id="header"></div>
         <h1>Hola Mundo</h1>
     </header>
     <main>
         <div class="contenido">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem possimus quibusdam hic, tenetur maxime
+                asperiores porro voluptas doloremque id at ipsum voluptate pariatur? Ipsam consectetur numquam ea
+                perferendis accusantium labore minima possimus? Necessitatibus dignissimos atque accusamus quisquam
+                voluptates quasi consequatur assumenda, accusantium sapiente totam cumque optio minus nemo voluptatum
+                perspiciatis quia. Modi ab ducimus sed quibusdam, dolorem cupiditate cumque corrupti! Dolorum possimus
+                iusto accusantium obcaecati, itaque nostrum id esse veniam corporis minima nesciunt. Sapiente dicta cum
+                quibusdam cumque iure dolorum tempore rem distinctio dolore eos accusamus numquam deleniti sint,
+                perspiciatis vitae. Ipsum tempora adipisci laudantium officia in quos ducimus fugit.</p>
+        </div>
+        <div id="javiera">
+            <h2>Javiera</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem possimus quibusdam hic, tenetur maxime
+                asperiores porro voluptas doloremque id at ipsum voluptate pariatur? Ipsam consectetur numquam ea
+                perferendis accusantium labore minima possimus? Necessitatibus dignissimos atque accusamus quisquam
+                voluptates quasi consequatur assumenda, accusantium sapiente totam cumque optio minus nemo voluptatum
+                perspiciatis quia. Modi ab ducimus sed quibusdam, dolorem cupiditate cumque corrupti! Dolorum possimus
+                iusto accusantium obcaecati, itaque nostrum id esse veniam corporis minima nesciunt. Sapiente dicta cum
+                quibusdam cumque iure dolorum tempore rem distinctio dolore eos accusamus numquam deleniti sint,
+                perspiciatis vitae. Ipsum tempora adipisci laudantium officia in quos ducimus fugit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem possimus quibusdam hic, tenetur maxime
+                asperiores porro voluptas doloremque id at ipsum voluptate pariatur? Ipsam consectetur numquam ea
+                perferendis accusantium labore minima possimus? Necessitatibus dignissimos atque accusamus quisquam
+                voluptates quasi consequatur assumenda, accusantium sapiente totam cumque optio minus nemo voluptatum
+                perspiciatis quia. Modi ab ducimus sed quibusdam, dolorem cupiditate cumque corrupti! Dolorum possimus
+                iusto accusantium obcaecati, itaque nostrum id esse veniam corporis minima nesciunt. Sapiente dicta cum
+                quibusdam cumque iure dolorum tempore rem distinctio dolore eos accusamus numquam deleniti sint,
+                perspiciatis vitae. Ipsum tempora adipisci laudantium officia in quos ducimus fugit.</p>
+        </div>
+        <div id="macarena">
+            <h2>Macarena</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem possimus quibusdam hic, tenetur maxime
+                asperiores porro voluptas doloremque id at ipsum voluptate pariatur? Ipsam consectetur numquam ea
+                perferendis accusantium labore minima possimus? Necessitatibus dignissimos atque accusamus quisquam
+                voluptates quasi consequatur assumenda, accusantium sapiente totam cumque optio minus nemo voluptatum
+                perspiciatis quia. Modi ab ducimus sed quibusdam, dolorem cupiditate cumque corrupti! Dolorum possimus
+                iusto accusantium obcaecati, itaque nostrum id esse veniam corporis minima nesciunt. Sapiente dicta cum
+                quibusdam cumque iure dolorum tempore rem distinctio dolore eos accusamus numquam deleniti sint,
+                perspiciatis vitae. Ipsum tempora adipisci laudantium officia in quos ducimus fugit.</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem possimus quibusdam hic, tenetur maxime
                 asperiores porro voluptas doloremque id at ipsum voluptate pariatur? Ipsam consectetur numquam ea
                 perferendis accusantium labore minima possimus? Necessitatibus dignissimos atque accusamus quisquam

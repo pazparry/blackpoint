@@ -4,7 +4,7 @@ body{
 }
 .header{
     background-image: url(../img/iStock-843874216.jpg);
-    background-color: rgba(0, 128, 128, 0.548);
+    /* background: rgba(0, 128, 128, 0.548); */
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
