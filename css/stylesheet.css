@@ -1,6 +1,7 @@
 body{
     margin: 0%;
     font-family: 'Lato', sans-serif;
+    background-color: #202020;
 }
 .image-header{
     background-image: 
@@ -14,7 +15,70 @@ body{
     background-repeat: no-repeat;
     height: 800px;
     margin-top: 0px;
-    color: teal;
+}
+.perfiles{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+.avatar1{
+    background-image: url(../img/javiera.jpeg);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: 0rem 2rem;
+}
+.avatar2{
+    background-image: url(../img/maca.jpeg);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: 0rem 2rem;
+}
+.avatar3{
+    background-image: url(../img/nico.jpeg);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: 0rem 2rem;
+}
+.avatar4{
+    background-image: url(../img/IMG_2405.JPG);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: 0rem 2rem;
+}
+.avatar5{
+    background-image: url(../img/sofia.jpeg);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: 0rem 2rem;
+}
+.titulos{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0rem 2.5rem;
+}
+.nombre{
+    width: 60%;
 }
 .black-box{
     background-color: #202020;
