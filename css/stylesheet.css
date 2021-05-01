@@ -1,4 +1,9 @@
-body{
+:root {
+    --yellow: #FAC710;
+    --white: whitesmoke;
+     
+  }
+  body{
     margin: 0%;
     font-family: 'Lato', sans-serif;
     background-color: #202020;
@@ -16,11 +21,32 @@ body{
     height: 800px;
     margin-top: 0px;
 }
-.perfiles{
-    display: flex;
+.image-header img{
     justify-content: center;
-    margin-top: 2.5rem;
+    text-align: center;
+    margin: 10rem auto;
 }
+.titulo_seccion{
+    margin-top: 3%;
+    text-align: center;
+    /* color: var(--yellow); */
+}
+.titulo_seccion h1{
+    font-size: 5rem;
+    color: #FAC710;
+}
+.perfiles{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    margin-top: 3%;
+}
+.integrante{
+    display: grid;
+    grid-template-rows: repeat(4, 50% 15% 15% 20%);
+    justify-content: center;
+    text-align: center;
+}
+
 .avatar1{
     background-image: url(../img/javiera.jpeg);
     border-radius: 50%;
@@ -30,6 +56,17 @@ body{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
+}
+.avatar1:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../img/javiera.jpeg);
+    background-position: center;
+    cursor: crosshair;
+    /* background-image: url(../img/mas.svg); */
 }
 .avatar2{
     background-image: url(../img/maca.jpeg);
@@ -41,6 +78,16 @@ body{
     background-position: 50%;
     margin: 0rem 2rem;
 }
+.avatar2:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../img/maca.jpeg);
+    cursor: crosshair;
+    /* background-image: url(../img/mas.svg); */
+}
 .avatar3{
     background-image: url(../img/nico.jpeg);
     border-radius: 50%;
@@ -50,6 +97,16 @@ body{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
+}
+.avatar3:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../img/nico.jpeg);
+    cursor: crosshair;
+    /* background-image: url(../img/mas.svg); */
 }
 .avatar4{
     background-image: url(../img/IMG_2405.JPG);
@@ -61,6 +118,16 @@ body{
     background-position: 50%;
     margin: 0rem 2rem;
 }
+.avatar4:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../img/IMG_2405.JPG);
+    cursor: crosshair;
+    /* background-image: url(../img/mas.svg); */
+}
 .avatar5{
     background-image: url(../img/sofia.jpeg);
     border-radius: 50%;
@@ -71,11 +138,24 @@ body{
     background-position: 50%;
     margin: 0rem 2rem;
 }
-.titulos{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    margin: 0rem 2.5rem;
+.avatar5:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../img/sofia.jpeg);
+    cursor: crosshair;
+    /* background-image: url(../img/mas.svg); */
+}
+.ver_perfil{
+    background-color: var(--yellow);
+    border-radius: 50px;
+    width: 12rem;
+    height: 3rem;
+    color: var(--white);
+    font-size: 1rem;
+    margin: 0% auto;
 }
 .nombre{
     width: 60%;
