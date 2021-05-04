@@ -1,8 +1,62 @@
+@font-face {
+    font-family: "Macbeth-Reguler";
+    src: url(../font/Macbeth-Reguler.ttf) format('truetype'),
+        url(../font/Macbeth-Reguler.woff) format('woff');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+:root{
+    --color-primario: #202020;
+    --color-secundario:#FAC710;
+    }
+
 *{
     padding: 0;
     margin: 0;
 }
 
 body{
-    background-color: #262626;
+    background-color: var(--color-primario);
 }
+
+#fotoperfil{
+    width: 500px;
+}
+
+#descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#container-4{
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.grisfondo{
+    color: var(--color-primario);
+    background-color: #FFFFFF;
+    width: 600px;
+}
+   
+h1{
+    color: #FFFFFF;
+    font-family: 'Macbeth-Reguler';
+}
+
+.box{
+    height: 180px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
