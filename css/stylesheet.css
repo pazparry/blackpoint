@@ -211,3 +211,104 @@ a{
     font-size: 3rem;
     margin: 0rem 0.5rem;
 }
+
+/* Formulario */
+body{
+    background-color: var(--grey);
+}
+#contenedor-formulario{
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100vw;
+    height:100vh;
+    position: relative;
+}
+h3{
+    color: var(--white);
+    text-align: center;
+}
+
+.mail-asunto-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.mail-form{
+    margin-right: 20px;
+}
+
+input{
+    font-style: italic;
+    background-color: transparent;
+    border: 2px solid var(--yellow);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    font-style: normal;
+    background-color: var(--yellow);
+    font-weight: bolder;
+}
+textarea{
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+    background-color: transparent;
+    border: 2px solid var(--yellow);
+}
+form{
+    padding: 20px;
+    border-radius: 30px;
+    width: 80vw;
+}
+label{
+    width: 100%;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit]:hover{
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    font-weight: bolder;
+}
+.semi-circulo-2 {
+    width: 100px; 
+    height: 200px; 
+    border: 2px solid transparent; 
+    background: var(--yellow);
+    -moz-border-radius: 0 100px 100px 0;
+    -webkit-border-radius: 0 100px 100px 0;
+    border-radius: 0 100px 100px 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.cuarto-circulo {
+    width: 150px; 
+    height: 150px; 
+    border: 2px solid transparent; 
+    background: var(--yellow);
+    -moz-border-radius: 100% 0 0 0;
+    -webkit-border-radius: 100% 0 0 0;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* Fin de formulario */
