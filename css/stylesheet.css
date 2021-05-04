@@ -1,6 +1,7 @@
 :root {
     --yellow: #FAC710;
     --white: whitesmoke;
+    --grey: #202020;
   }
   body{
     margin: 0%;
@@ -53,7 +54,7 @@ a{
 }
 .telefono{
     margin-top: 2.5rem;
-    color: var(--white);
+    color: var(--yellow);
     text-align: left;
     margin-left: 4rem;
 }
@@ -62,7 +63,7 @@ a{
 }
 .mail{
     margin-top: 1rem;
-    color: var(--white);
+    color: var(--yellow);
     text-align: left;
     margin-left: 4rem;
 }
@@ -173,10 +174,12 @@ a{
 .ver_perfil{
     background-color: var(--yellow);
     border-radius: 50px;
+    border-color: transparent;
     width: 11rem;
     height: 2.5rem;
-    color: var(--white);
+    color: var(--grey);
     font-size: 1rem;
+    font-weight: bold;
     margin: 8% auto;
 }
 .nombre{
