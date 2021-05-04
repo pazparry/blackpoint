@@ -3,16 +3,16 @@
   position: sticky;
   top: 0;
 }
-#navbar{
-    overflow: hidden;
-    background-color:transparent;
-}
+
 .navbar{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
+    overflow: hidden;
     background-color:transparent;
 }
 nav img{
@@ -20,18 +20,19 @@ nav img{
     height: auto;
     margin-left: 5%;
 }
-.navbar ul{
+.navbar-ul{
     display: flex;
     width: 50%;
     align-items: center;
     justify-content: center;
+    list-style-type: none;
 }
-nav li{
+.navbar-ul li{
     list-style:none;
     display: inline-block;
     padding: 0rem 1.5rem;
 }
-nav a{
+.navbar-ul li a{
     color: ghostwhite;
     text-decoration: none;
     display: inline-block;
@@ -50,6 +51,7 @@ nav a:active{
 .hamburger{
     background-color: transparent;
     border: 0;
+    display: none;
     color: ghostwhite;
     font-size: 20px;
     cursor: pointer;
@@ -67,4 +69,18 @@ nav a:active{
   
   .sticky + .content {
     padding-top: 60px;
+  }
+
+  @media screen and (max-width: 767px){
+      .navbar-ul{
+          display: none;
+          width: 100%;
+          flex-direction: column;
+      }
+      .hamburger{
+          display: block;
+      }
+      .navbar-ul.show{
+          display: flex;
+      }
   }

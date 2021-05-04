@@ -20,20 +20,23 @@
     background-repeat: no-repeat;
     height: 800px;
     margin-top: 0px;
+    
 }
 .image-header img{
     justify-content: center;
     text-align: center;
-    margin: 10rem auto;
+    margin: auto;
+    display: block;
+    padding-top: 6rem;
 }
 .titulo_seccion{
     margin-top: 3%;
     text-align: center;
     /* color: var(--yellow); */
 }
-.titulo_seccion h1{
+.titulo_seccion_h1{
     font-size: 5rem;
-    color: #FAC710;
+    color: #FAC710 !important;
 }
 .perfiles{
     display: grid;
