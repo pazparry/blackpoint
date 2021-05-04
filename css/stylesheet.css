@@ -1,12 +1,14 @@
 :root {
     --yellow: #FAC710;
     --white: whitesmoke;
-     
   }
   body{
     margin: 0%;
     font-family: 'Lato', sans-serif;
     background-color: #202020;
+}
+a{
+    text-decoration: none;
 }
 .image-header{
     background-image: 
@@ -49,7 +51,24 @@
     justify-content: center;
     text-align: center;
 }
-
+.telefono{
+    margin-top: 2.5rem;
+    color: var(--white);
+    text-align: left;
+    margin-left: 4rem;
+}
+.telefono a{
+    color: var(--white);
+}
+.mail{
+    margin-top: 1rem;
+    color: var(--white);
+    text-align: left;
+    margin-left: 4rem;
+}
+.mail a{
+    color: var(--white);
+}
 .avatar1{
     background-image: url(../img/javiera.jpeg);
     border-radius: 50%;
@@ -154,14 +173,17 @@
 .ver_perfil{
     background-color: var(--yellow);
     border-radius: 50px;
-    width: 12rem;
-    height: 3rem;
+    width: 11rem;
+    height: 2.5rem;
     color: var(--white);
     font-size: 1rem;
-    margin: 0% auto;
+    margin: 8% auto;
 }
 .nombre{
     width: 60%;
+}
+.nombre2{
+    width: 50%;
 }
 .black-box{
     background-color: #202020;
