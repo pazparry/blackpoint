@@ -1,7 +1,15 @@
-body{
+:root {
+    --yellow: #FAC710;
+    --white: whitesmoke;
+    --grey: #202020;
+  }
+  body{
     margin: 0%;
     font-family: 'Lato', sans-serif;
     background-color: #202020;
+}
+a{
+    text-decoration: none;
 }
 .image-header{
     background-image: 
@@ -15,11 +23,52 @@ body{
     background-repeat: no-repeat;
     height: 800px;
     margin-top: 0px;
+    
+}
+.image-header img{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding-top: 6rem;
+}
+.titulo_seccion{
+    margin-top: 3%;
+    text-align: center;
+    /* color: var(--yellow); */
+}
+.titulo_seccion_h1{
+    font-size: 5rem;
+    color: #FAC710 !important;
 }
 .perfiles{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    margin-top: 3%;
+}
+.integrante{
+    display: grid;
+    grid-template-rows: repeat(4, 50% 15% 15% 20%);
     justify-content: center;
+    text-align: center;
+}
+.telefono{
     margin-top: 2.5rem;
+    color: var(--yellow);
+    text-align: left;
+    margin-left: 4rem;
+}
+.telefono a{
+    color: var(--white);
+}
+.mail{
+    margin-top: 1rem;
+    color: var(--yellow);
+    text-align: left;
+    margin-left: 4rem;
+}
+.mail a{
+    color: var(--white);
 }
 .avatar1{
     background-image: url(../img/javiera.jpeg);
@@ -31,6 +80,17 @@ body{
     background-position: 50%;
     margin: 0rem 2rem;
 }
+.avatar1:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../img/javiera.jpeg);
+    background-position: center;
+    cursor: crosshair;
+    /* background-image: url(../img/mas.svg); */
+}
 .avatar2{
     background-image: url(../img/maca.jpeg);
     border-radius: 50%;
@@ -40,6 +100,16 @@ body{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
+}
+.avatar2:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../img/maca.jpeg);
+    cursor: crosshair;
+    /* background-image: url(../img/mas.svg); */
 }
 .avatar3{
     background-image: url(../img/nico.jpeg);
@@ -51,6 +121,16 @@ body{
     background-position: 50%;
     margin: 0rem 2rem;
 }
+.avatar3:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../img/nico.jpeg);
+    cursor: crosshair;
+    /* background-image: url(../img/mas.svg); */
+}
 .avatar4{
     background-image: url(../img/IMG_2405.JPG);
     border-radius: 50%;
@@ -60,6 +140,16 @@ body{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
+}
+.avatar4:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../img/IMG_2405.JPG);
+    cursor: crosshair;
+    /* background-image: url(../img/mas.svg); */
 }
 .avatar5{
     background-image: url(../img/sofia.jpeg);
@@ -71,14 +161,32 @@ body{
     background-position: 50%;
     margin: 0rem 2rem;
 }
-.titulos{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    margin: 0rem 2.5rem;
+.avatar5:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../img/sofia.jpeg);
+    cursor: crosshair;
+    /* background-image: url(../img/mas.svg); */
+}
+.ver_perfil{
+    background-color: var(--yellow);
+    border-radius: 50px;
+    border-color: transparent;
+    width: 11rem;
+    height: 2.5rem;
+    color: var(--grey);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 8% auto;
 }
 .nombre{
     width: 60%;
+}
+.nombre2{
+    width: 50%;
 }
 .black-box{
     background-color: #202020;
@@ -101,3 +209,104 @@ body{
     font-size: 3rem;
     margin: 0rem 0.5rem;
 }
+
+/* Formulario */
+body{
+    background-color: var(--grey);
+}
+#contenedor-formulario{
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100vw;
+    height:100vh;
+    position: relative;
+}
+h3{
+    color: var(--white);
+    text-align: center;
+}
+
+.mail-asunto-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.mail-form{
+    margin-right: 20px;
+}
+
+input{
+    font-style: italic;
+    background-color: transparent;
+    border: 2px solid var(--yellow);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    font-style: normal;
+    background-color: var(--yellow);
+    font-weight: bolder;
+}
+textarea{
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+    background-color: transparent;
+    border: 2px solid var(--yellow);
+}
+form{
+    padding: 20px;
+    border-radius: 30px;
+    width: 80vw;
+}
+label{
+    width: 100%;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit]:hover{
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    font-weight: bolder;
+}
+.semi-circulo-2 {
+    width: 100px; 
+    height: 200px; 
+    border: 2px solid transparent; 
+    background: var(--yellow);
+    -moz-border-radius: 0 100px 100px 0;
+    -webkit-border-radius: 0 100px 100px 0;
+    border-radius: 0 100px 100px 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.cuarto-circulo {
+    width: 150px; 
+    height: 150px; 
+    border: 2px solid transparent; 
+    background: var(--yellow);
+    -moz-border-radius: 100% 0 0 0;
+    -webkit-border-radius: 100% 0 0 0;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* Fin de formulario */
