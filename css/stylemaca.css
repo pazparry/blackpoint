@@ -1,37 +1,39 @@
-@font-face {
-    font-family: "Macbeth-Reguler";
-    src: url(../font/Macbeth-Reguler.ttf) format('truetype'),
-        url(../font/Macbeth-Reguler.woff) format('woff');
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
 :root{
     --color-primario: #202020;
     --color-secundario:#FAC710;
     }
-
 *{
     padding: 0;
     margin: 0;
 }
-
 body{
     background-color: var(--color-primario);
 }
-
-#fotoperfil{
-    width: 500px;
-}
-
-#descripcion{
+#primer-contenedor{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
-#container-4{
+
+.costadoizq-foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nombre-maca{
+    width: 70%;
+}
+.foto-principal-maca{
+    width: 30%;
+    
+}
+
+
+
+
+
+
+#caja-mis-trabajos{
     display: grid;
     grid-template-columns: repeat(3, 180px);
     /*grid-template-columns: 1fr 1fr 1fr;*/
@@ -44,7 +46,15 @@ body{
     background-color: #FFFFFF;
     width: 600px;
 }
-   
+
+
+
+/*
+.nombre-maca .boton-maca{
+    display: flex;
+    flex-direction: row;
+} */
+
 h1{
     color: #FFFFFF;
     font-family: 'Macbeth-Reguler';
