@@ -46,6 +46,9 @@ a{
     grid-template-columns: repeat(5, 20%);
     margin-top: 3%;
 }
+.imagen_perfil{
+    position: relative;
+}
 .integrante{
     display: grid;
     grid-template-rows: repeat(4, 50% 15% 15% 20%);
@@ -63,6 +66,7 @@ a{
     font-size: 1.2rem;
 }
 .mail{
+    display: block;
     margin-top: 1rem;
     color: var(--yellow);
     text-align: left;
@@ -71,6 +75,11 @@ a{
 .mail a{
     color: var(--white);
     font-size: 1.2rem;
+}
+.titulo{
+    position: absolute;
+    left: 39px;
+    top: 156px;
 }
 .avatar1{
     background-image: url(../img/javiera.jpeg);
@@ -174,6 +183,8 @@ a{
     /* background-image: url(../img/mas.svg); */
 }
 .ver_perfil{
+    display: block;
+    align-self: start;
     background-color: var(--yellow);
     border-radius: 50px;
     border-color: transparent;
@@ -182,7 +193,7 @@ a{
     color: var(--grey);
     font-size: 1rem;
     font-weight: bold;
-    margin: 8% auto;
+    margin: 8% 0px;
 }
 .nombre{
     width: 60%;
@@ -240,6 +251,35 @@ h3{
 .mail-form{
     margin-right: 20px;
 }
+
+@media screen and (max-width: 576px){
+    .perfiles{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 3%;
+    }
+    .integrante{
+        border-color: var(--yellow);
+        border-style: solid;
+        border-radius: 50px;
+        border-width: 2px;
+        grid-template-columns: 1fr 1fr;
+        grid-row-start: 1;
+        grid-row-end:   4;
+    }
+}
+@media screen and (min-width: 498px){
+    .perfiles{
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 1366px){
+    .perfiles{
+        grid-template-columns: repeat(5, 20%);
+        margin-top: 3%;
+    }
+}
+
 
 input{
     font-style: italic;
