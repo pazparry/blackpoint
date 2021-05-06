@@ -17,7 +17,7 @@ a{
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../img/iStock-843874216.jpg);
+    url(../assets/img/iStock-843874216.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ a{
     top: 156px;
 }
 .avatar1{
-    background-image: url(../img/javiera.jpeg);
+    background-image: url(../assets/img/javiera.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -102,14 +102,14 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../img/javiera.jpeg);
+    url(../assets/img/javiera.jpeg);
     background-position: center;
     cursor: crosshair;
     filter: none;
     /* background-image: url(../img/mas.svg); */
 }
 .avatar2{
-    background-image: url(../img/maca.jpeg);
+    background-image: url(../assets/img/maca.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -125,13 +125,13 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../img/maca.jpeg);
+    url(../assets/img/maca.jpeg);
     cursor: crosshair;
     filter: none;
     /* background-image: url(../img/mas.svg); */
 }
 .avatar3{
-    background-image: url(../img/nico.jpeg);
+    background-image: url(../assets/img/nico.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -147,13 +147,13 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../img/nico.jpeg);
+    url(../assets/img/nico.jpeg);
     cursor: crosshair;
     filter: none;
     /* background-image: url(../img/mas.svg); */
 }
 .avatar4{
-    background-image: url(../img/IMG_2405.JPG);
+    background-image: url(../assets/img/IMG_2405.JPG);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -169,13 +169,13 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../img/IMG_2405.JPG);
+    url(../assets/img/IMG_2405.JPG);
     cursor: crosshair;
     filter: none;
     /* background-image: url(../img/mas.svg); */
 }
 .avatar5{
-    background-image: url(../img/sofia.jpeg);
+    background-image: url(../assets/img/sofia.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -191,7 +191,7 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../img/sofia.jpeg);
+    url(../assets/img/sofia.jpeg);
     cursor: crosshair;
     filter: none;
     /* background-image: url(../img/mas.svg); */
