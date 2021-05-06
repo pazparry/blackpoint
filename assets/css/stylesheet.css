@@ -1,0 +1,404 @@
+:root {
+    --yellow: #FAC710;
+    --white: whitesmoke;
+    --grey: #202020;
+  }
+  body{
+    margin: 0%;
+    font-family: 'Lato', sans-serif;
+    background-color: #202020;
+}
+a{
+    text-decoration: none;
+}
+.image-header{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../../assets/img/iStock-843874216.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-top: 0px;
+    
+}
+.image-header img{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding-top: 6rem;
+}
+.titulo_seccion{
+    margin-top: 3%;
+    text-align: center;
+}
+.titulo_seccion_h1{
+    font-size: 5rem;
+    color: #FAC710 !important;
+}
+.perfiles{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    margin-top: 3%;
+}
+.imagen_perfil{
+    position: relative;
+    z-index: -99;
+}
+.integrante{
+    display: grid;
+    grid-template-rows: repeat(4, 50% 15% 15% 20%);
+    justify-content: center;
+    text-align: center;
+}
+.datos{
+    margin-top: 10px;
+}
+.telefono{
+    margin-top: 2.5rem;
+    color: var(--yellow);
+    text-align: left;
+    margin-left: 4rem;
+}
+.telefono a{
+    color: var(--white);
+    font-size: 1.2rem;
+}
+.mail{
+    display: block;
+    margin-top: 1rem;
+    color: var(--yellow);
+    text-align: left;
+    margin-left: 4rem;
+}
+.mail a{
+    color: var(--white);
+    font-size: 1.2rem;
+}
+.titulo{
+    position: absolute;
+    left: 39px;
+    top: 156px;
+}
+.avatar1{
+    background-image: url(../../assets/img/javiera.jpeg);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: 0rem 2rem;
+    filter: grayscale(100%);
+}
+.avatar1:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../../assets/img/javiera.jpeg);
+    background-position: center;
+    cursor: crosshair;
+    filter: none;
+}
+.avatar2{
+    background-image: url(../../assets/img/maca.jpeg);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: 0rem 2rem;
+    filter: grayscale(100%);
+}
+.avatar2:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../assets/img/maca.jpeg);
+    cursor: crosshair;
+    filter: none;
+}
+.avatar3{
+    background-image: url(../../assets/img/nico.jpeg);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: 0rem 2rem;
+    filter: grayscale(100%);
+}
+.avatar3:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../../assets/img/nico.jpeg);
+    cursor: crosshair;
+    filter: none;
+}
+.avatar4{
+    background-image: url(../../assets/img/IMG_2405.JPG);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: 0rem 2rem;
+    filter: grayscale(100%);
+}
+.avatar4:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../../assets/img/IMG_2405.JPG);
+    cursor: crosshair;
+    filter: none;
+}
+.avatar5{
+    background-image: url(../../assets/img/sofia.jpeg);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: 0rem 2rem;
+    filter: grayscale(100%);
+}
+.avatar5:hover{
+    background-image: 
+    linear-gradient(
+      rgba(231, 228, 8, 0.5),
+      rgba(231, 228, 8, 0.5)
+    ),
+    url(../../assets/img/sofia.jpeg);
+    cursor: crosshair;
+    filter: none;
+}
+.ver_perfil{
+    display: block;
+    align-self: start;
+    background-color: var(--yellow);
+    border-radius: 50px;
+    border-color: transparent;
+    width: 11rem;
+    height: 2.5rem;
+    color: var(--grey);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 8% 0px;
+}
+.nombre{
+    width: 60%;
+}
+.nombre2{
+    width: 50%;
+}
+.black-box{
+    background-color: #202020;
+    color: whitesmoke;
+    padding: 2rem 10rem;
+    display: flex;
+}
+.white-box{
+    background-color: whitesmoke;
+    color: #202020;
+    padding: 2rem 10rem;
+}
+.rrss{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+.rrss-y{
+    color: #FAC710;
+    font-size: 3rem;
+    margin: 0rem 0.5rem;
+}
+
+/* Formulario */
+body{
+    background-color: var(--grey);
+}
+#contenedor-formulario{
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100vw;
+    height:100vh;
+    position: relative;
+    z-index: -98;
+}
+h3{
+    color: var(--white);
+    text-align: center;
+}
+
+.mail-asunto-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.mail-form{
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 576px){
+    .perfiles{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 3%;
+        gap: 10px;
+    }
+    .integrante{
+        border-color: var(--yellow);
+        border-style: solid;
+        border-radius: 50px;
+        border-width: 2px;
+        grid-template-columns: 2fr 1fr;
+    }
+    .image-header img{
+        width: 100%;
+    }
+    .image-header{
+        height: 300px;
+    }
+    .logo{
+        width: 40%;
+    }
+    .avatar1, .avatar2, .avatar3, .avatar4, .avatar5{
+        width: 150px;
+        height: 150px;
+        margin: 1rem 1rem;
+        filter: grayscale(100%);
+    }
+    .telefono, .mail{
+        margin-left: -3rem;
+    }
+}
+@media screen and (min-width: 498px){
+    .perfiles{
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 3%;
+    } 
+}
+@media screen and (max-width: 497px){
+    .titulo{
+        left: -36px;
+        top: 97px;
+        width: 14rem;
+    }
+    #contenedor-formulario{
+        margin-top: 7rem;
+    }
+    .semi-circulo-2, .cuarto-circulo{
+        display: none;
+    }
+    .mail-form, .asunto-form{
+        display: block;
+        width: 100%;
+    }
+    .mail-asunto-form{
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 1366px){
+    .perfiles{
+        grid-template-columns: repeat(5, 20%);
+        margin-top: 3%;
+    }
+}
+
+
+input{
+    font-style: italic;
+    background-color: transparent;
+    border: 2px solid var(--yellow);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    font-style: normal;
+    background-color: var(--yellow);
+    font-weight: bolder;
+}
+textarea{
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+    background-color: transparent;
+    border: 2px solid var(--yellow);
+}
+form{
+    padding: 20px;
+    border-radius: 30px;
+    width: 80vw;
+}
+label{
+    width: 100%;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit]:hover{
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    font-weight: bolder;
+}
+.semi-circulo-2 {
+    width: 100px; 
+    height: 200px; 
+    border: 2px solid transparent; 
+    background: var(--yellow);
+    -moz-border-radius: 0 100px 100px 0;
+    -webkit-border-radius: 0 100px 100px 0;
+    border-radius: 0 100px 100px 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.cuarto-circulo {
+    width: 150px; 
+    height: 150px; 
+    border: 2px solid transparent; 
+    background: var(--yellow);
+    -moz-border-radius: 100% 0 0 0;
+    -webkit-border-radius: 100% 0 0 0;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* Fin de formulario */
