@@ -17,7 +17,7 @@ a{
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../assets/img/iStock-843874216.jpg);
+    url(../../assets/img/iStock-843874216.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -35,7 +35,6 @@ a{
 .titulo_seccion{
     margin-top: 3%;
     text-align: center;
-    /* color: var(--yellow); */
 }
 .titulo_seccion_h1{
     font-size: 5rem;
@@ -86,7 +85,7 @@ a{
     top: 156px;
 }
 .avatar1{
-    background-image: url(../assets/img/javiera.jpeg);
+    background-image: url(../../assets/img/javiera.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -102,14 +101,13 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../assets/img/javiera.jpeg);
+    url(../../assets/img/javiera.jpeg);
     background-position: center;
     cursor: crosshair;
     filter: none;
-    /* background-image: url(../img/mas.svg); */
 }
 .avatar2{
-    background-image: url(../assets/img/maca.jpeg);
+    background-image: url(../../assets/img/maca.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -128,10 +126,9 @@ a{
     url(../assets/img/maca.jpeg);
     cursor: crosshair;
     filter: none;
-    /* background-image: url(../img/mas.svg); */
 }
 .avatar3{
-    background-image: url(../assets/img/nico.jpeg);
+    background-image: url(../../assets/img/nico.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -147,13 +144,12 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../assets/img/nico.jpeg);
+    url(../../assets/img/nico.jpeg);
     cursor: crosshair;
     filter: none;
-    /* background-image: url(../img/mas.svg); */
 }
 .avatar4{
-    background-image: url(../assets/img/IMG_2405.JPG);
+    background-image: url(../../assets/img/IMG_2405.JPG);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -169,13 +165,12 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../assets/img/IMG_2405.JPG);
+    url(../../assets/img/IMG_2405.JPG);
     cursor: crosshair;
     filter: none;
-    /* background-image: url(../img/mas.svg); */
 }
 .avatar5{
-    background-image: url(../assets/img/sofia.jpeg);
+    background-image: url(../../assets/img/sofia.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -191,10 +186,9 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../assets/img/sofia.jpeg);
+    url(../../assets/img/sofia.jpeg);
     cursor: crosshair;
     filter: none;
-    /* background-image: url(../img/mas.svg); */
 }
 .ver_perfil{
     display: block;
