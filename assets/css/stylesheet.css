@@ -17,7 +17,7 @@ a{
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../img/iStock-843874216.jpg);
+    url(../../assets/img/iStock-843874216.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -35,7 +35,6 @@ a{
 .titulo_seccion{
     margin-top: 3%;
     text-align: center;
-    /* color: var(--yellow); */
 }
 .titulo_seccion_h1{
     font-size: 5rem;
@@ -46,11 +45,18 @@ a{
     grid-template-columns: repeat(5, 20%);
     margin-top: 3%;
 }
+.imagen_perfil{
+    position: relative;
+    z-index: -99;
+}
 .integrante{
     display: grid;
     grid-template-rows: repeat(4, 50% 15% 15% 20%);
     justify-content: center;
     text-align: center;
+}
+.datos{
+    margin-top: 10px;
 }
 .telefono{
     margin-top: 2.5rem;
@@ -63,6 +69,7 @@ a{
     font-size: 1.2rem;
 }
 .mail{
+    display: block;
     margin-top: 1rem;
     color: var(--yellow);
     text-align: left;
@@ -72,8 +79,13 @@ a{
     color: var(--white);
     font-size: 1.2rem;
 }
+.titulo{
+    position: absolute;
+    left: 39px;
+    top: 156px;
+}
 .avatar1{
-    background-image: url(../img/javiera.jpeg);
+    background-image: url(../../assets/img/javiera.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -81,6 +93,7 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
+    filter: grayscale(100%);
 }
 .avatar1:hover{
     background-image: 
@@ -88,13 +101,13 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../img/javiera.jpeg);
+    url(../../assets/img/javiera.jpeg);
     background-position: center;
     cursor: crosshair;
-    /* background-image: url(../img/mas.svg); */
+    filter: none;
 }
 .avatar2{
-    background-image: url(../img/maca.jpeg);
+    background-image: url(../../assets/img/maca.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -102,6 +115,7 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
+    filter: grayscale(100%);
 }
 .avatar2:hover{
     background-image: 
@@ -109,12 +123,12 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../img/maca.jpeg);
+    url(../assets/img/maca.jpeg);
     cursor: crosshair;
-    /* background-image: url(../img/mas.svg); */
+    filter: none;
 }
 .avatar3{
-    background-image: url(../img/nico.jpeg);
+    background-image: url(../../assets/img/nico.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -122,6 +136,7 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
+    filter: grayscale(100%);
 }
 .avatar3:hover{
     background-image: 
@@ -129,12 +144,12 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../img/nico.jpeg);
+    url(../../assets/img/nico.jpeg);
     cursor: crosshair;
-    /* background-image: url(../img/mas.svg); */
+    filter: none;
 }
 .avatar4{
-    background-image: url(../img/IMG_2405.JPG);
+    background-image: url(../../assets/img/IMG_2405.JPG);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -142,6 +157,7 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
+    filter: grayscale(100%);
 }
 .avatar4:hover{
     background-image: 
@@ -149,12 +165,12 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../img/IMG_2405.JPG);
+    url(../../assets/img/IMG_2405.JPG);
     cursor: crosshair;
-    /* background-image: url(../img/mas.svg); */
+    filter: none;
 }
 .avatar5{
-    background-image: url(../img/sofia.jpeg);
+    background-image: url(../../assets/img/sofia.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -162,6 +178,7 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
+    filter: grayscale(100%);
 }
 .avatar5:hover{
     background-image: 
@@ -169,11 +186,13 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../img/sofia.jpeg);
+    url(../../assets/img/sofia.jpeg);
     cursor: crosshair;
-    /* background-image: url(../img/mas.svg); */
+    filter: none;
 }
 .ver_perfil{
+    display: block;
+    align-self: start;
     background-color: var(--yellow);
     border-radius: 50px;
     border-color: transparent;
@@ -182,7 +201,7 @@ a{
     color: var(--grey);
     font-size: 1rem;
     font-weight: bold;
-    margin: 8% auto;
+    margin: 8% 0px;
 }
 .nombre{
     width: 60%;
@@ -225,6 +244,7 @@ body{
     width:100vw;
     height:100vh;
     position: relative;
+    z-index: -98;
 }
 h3{
     color: var(--white);
@@ -240,6 +260,76 @@ h3{
 .mail-form{
     margin-right: 20px;
 }
+
+
+@media screen and (max-width: 576px){
+    .perfiles{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 3%;
+        gap: 10px;
+    }
+    .integrante{
+        border-color: var(--yellow);
+        border-style: solid;
+        border-radius: 50px;
+        border-width: 2px;
+        grid-template-columns: 2fr 1fr;
+    }
+    .image-header img{
+        width: 100%;
+    }
+    .image-header{
+        height: 300px;
+    }
+    .logo{
+        width: 40%;
+    }
+    .avatar1, .avatar2, .avatar3, .avatar4, .avatar5{
+        width: 150px;
+        height: 150px;
+        margin: 1rem 1rem;
+        filter: grayscale(100%);
+    }
+    .telefono, .mail{
+        margin-left: -3rem;
+    }
+}
+@media screen and (min-width: 498px){
+    .perfiles{
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 3%;
+    } 
+}
+@media screen and (max-width: 497px){
+    .titulo{
+        left: -36px;
+        top: 97px;
+        width: 14rem;
+    }
+    #contenedor-formulario{
+        margin-top: 7rem;
+    }
+    .semi-circulo-2, .cuarto-circulo{
+        display: none;
+    }
+    .mail-form, .asunto-form{
+        display: block;
+        width: 100%;
+    }
+    .mail-asunto-form{
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 1366px){
+    .perfiles{
+        grid-template-columns: repeat(5, 20%);
+        margin-top: 3%;
+    }
+}
+
 
 input{
     font-style: italic;
