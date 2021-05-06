@@ -48,12 +48,16 @@ a{
 }
 .imagen_perfil{
     position: relative;
+    z-index: -99;
 }
 .integrante{
     display: grid;
     grid-template-rows: repeat(4, 50% 15% 15% 20%);
     justify-content: center;
     text-align: center;
+}
+.datos{
+    margin-top: 10px;
 }
 .telefono{
     margin-top: 2.5rem;
@@ -90,6 +94,7 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
+    filter: grayscale(100%);
 }
 .avatar1:hover{
     background-image: 
@@ -100,6 +105,7 @@ a{
     url(../img/javiera.jpeg);
     background-position: center;
     cursor: crosshair;
+    filter: none;
     /* background-image: url(../img/mas.svg); */
 }
 .avatar2{
@@ -111,6 +117,7 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
+    filter: grayscale(100%);
 }
 .avatar2:hover{
     background-image: 
@@ -120,6 +127,7 @@ a{
     ),
     url(../img/maca.jpeg);
     cursor: crosshair;
+    filter: none;
     /* background-image: url(../img/mas.svg); */
 }
 .avatar3{
@@ -131,6 +139,7 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
+    filter: grayscale(100%);
 }
 .avatar3:hover{
     background-image: 
@@ -140,6 +149,7 @@ a{
     ),
     url(../img/nico.jpeg);
     cursor: crosshair;
+    filter: none;
     /* background-image: url(../img/mas.svg); */
 }
 .avatar4{
@@ -151,6 +161,7 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
+    filter: grayscale(100%);
 }
 .avatar4:hover{
     background-image: 
@@ -160,6 +171,7 @@ a{
     ),
     url(../img/IMG_2405.JPG);
     cursor: crosshair;
+    filter: none;
     /* background-image: url(../img/mas.svg); */
 }
 .avatar5{
@@ -171,6 +183,7 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
+    filter: grayscale(100%);
 }
 .avatar5:hover{
     background-image: 
@@ -180,6 +193,7 @@ a{
     ),
     url(../img/sofia.jpeg);
     cursor: crosshair;
+    filter: none;
     /* background-image: url(../img/mas.svg); */
 }
 .ver_perfil{
@@ -236,6 +250,7 @@ body{
     width:100vw;
     height:100vh;
     position: relative;
+    z-index: -98;
 }
 h3{
     color: var(--white);
@@ -252,11 +267,13 @@ h3{
     margin-right: 20px;
 }
 
+
 @media screen and (max-width: 576px){
     .perfiles{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin-top: 3%;
+        gap: 10px;
     }
     .integrante{
         border-color: var(--yellow);
@@ -274,32 +291,13 @@ h3{
     .logo{
         width: 40%;
     }
-    .avatar1{
+    .avatar1, .avatar2, .avatar3, .avatar4, .avatar5{
         width: 150px;
         height: 150px;
         margin: 1rem 1rem;
+        filter: grayscale(100%);
     }
-    .avatar2{
-        width: 150px;
-        height: 150px;
-        margin: 1rem 1rem;
-    }
-    .avatar3{
-        width: 150px;
-        height: 150px;
-        margin: 1rem 1rem;
-    }
-    .avatar4{
-        width: 150px;
-        height: 150px;
-        margin: 1rem 1rem;
-    }
-    .avatar5{
-        width: 150px;
-        height: 150px;
-        margin: 1rem 1rem;
-    }
-    .telefono{
+    .telefono, .mail{
         margin-left: -3rem;
     }
 }
@@ -307,8 +305,30 @@ h3{
     .perfiles{
         grid-template-columns: repeat(3, 1fr);
         margin-top: 3%;
-    }
+    } 
 }
+@media screen and (max-width: 497px){
+    .titulo{
+        left: -36px;
+        top: 97px;
+        width: 14rem;
+    }
+    #contenedor-formulario{
+        margin-top: 7rem;
+    }
+    .semi-circulo-2, .cuarto-circulo{
+        display: none;
+    }
+    .mail-form, .asunto-form{
+        display: block;
+        width: 100%;
+    }
+    .mail-asunto-form{
+        display: block;
+    }
+    
+}
+
 @media screen and (min-width: 1366px){
     .perfiles{
         grid-template-columns: repeat(5, 20%);
