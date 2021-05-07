@@ -1,4 +1,4 @@
-:root {
+root {
     --yellow: #FAC710;
     --white: whitesmoke;
     --grey: #202020;
@@ -8,36 +8,69 @@
     font-family: 'Lato', sans-serif;
     background-color: #202020;
 }
-a{
-    text-decoration: none;
+
+#primer-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--grey);
+    height: 100vh;
 }
-.nav-prueba{
-    z-index: 999;
+
+.costadoizq-foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.image-header{
-    background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(../../assets/img/iStock-843874216.jpg);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 800px;
-    margin-top: 0px;
+
+.nombre-sofi{
+    width: 60%;
+    margin-left: 80px;
+}
+.nombre-sofi img{
+    width: 100%;
+}
+.foto-principal-sofi{
+    margin-right: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0
+}
+
+.primeros-botones{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
     
 }
-.image-header img{
-    justify-content: center;
+.boton-general{
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--grey);
+    border-radius: 50px;
+    margin: 15px;
+    font-size: 15px;
+    text-decoration: none;
     text-align: center;
-    margin: auto;
-    display: block;
-    padding-top: 6rem;
+    width: 200px;
 }
+.boton-general a{
+    color: var(--grey);
+    font-weight: 800;
+}
+.boton-cv{
+    background-color: var(--yellow);
+}
+.boton-wa{
+    background-color: var(--white);
+}
+
 .titulo_seccion{
     margin-top: 3%;
     text-align: center;
+    /* color: var(--yellow); */
 }
 .titulo_seccion_h1{
     font-size: 5rem;
@@ -48,17 +81,11 @@ a{
     grid-template-columns: repeat(5, 20%);
     margin-top: 3%;
 }
-.imagen_perfil{
-    position: relative;
-}
 .integrante{
     display: grid;
     grid-template-rows: repeat(4, 50% 15% 15% 20%);
     justify-content: center;
     text-align: center;
-}
-.datos{
-    margin-top: 10px;
 }
 .telefono{
     margin-top: 2.5rem;
@@ -71,7 +98,6 @@ a{
     font-size: 1.2rem;
 }
 .mail{
-    display: block;
     margin-top: 1rem;
     color: var(--yellow);
     text-align: left;
@@ -81,13 +107,8 @@ a{
     color: var(--white);
     font-size: 1.2rem;
 }
-.titulo{
-    position: absolute;
-    left: 39px;
-    top: 156px;
-}
 .avatar1{
-    background-image: url(../../assets/img/javiera.jpeg);
+    background-image: url(../img/javiera.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -95,7 +116,6 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
-    filter: grayscale(100%);
 }
 .avatar1:hover{
     background-image: 
@@ -103,13 +123,13 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../../assets/img/javiera.jpeg);
+    url(../img/javiera.jpeg);
     background-position: center;
     cursor: crosshair;
-    filter: none;
+    /* background-image: url(../img/mas.svg); */
 }
 .avatar2{
-    background-image: url(../../assets/img/maca.jpeg);
+    background-image: url(../img/maca.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -117,7 +137,6 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
-    filter: grayscale(100%);
 }
 .avatar2:hover{
     background-image: 
@@ -125,12 +144,12 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../../assets/img/maca.jpeg);
+    url(../img/maca.jpeg);
     cursor: crosshair;
-    filter: none;
+    /* background-image: url(../img/mas.svg); */
 }
 .avatar3{
-    background-image: url(../../assets/img/nico.jpeg);
+    background-image: url(../img/nico.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -138,7 +157,6 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
-    filter: grayscale(100%);
 }
 .avatar3:hover{
     background-image: 
@@ -146,12 +164,12 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../../assets/img/nico.jpeg);
+    url(../img/nico.jpeg);
     cursor: crosshair;
-    filter: none;
+    /* background-image: url(../img/mas.svg); */
 }
 .avatar4{
-    background-image: url(../../assets/img/IMG_2405.JPG);
+    background-image: url(../img/IMG_2405.JPG);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -159,7 +177,6 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
-    filter: grayscale(100%);
 }
 .avatar4:hover{
     background-image: 
@@ -167,12 +184,12 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../../assets/img/IMG_2405.JPG);
+    url(../img/IMG_2405.JPG);
     cursor: crosshair;
-    filter: none;
+    /* background-image: url(../img/mas.svg); */
 }
 .avatar5{
-    background-image: url(../../assets/img/sofia.jpeg);
+    background-image: url(../img/sofia.jpeg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -180,7 +197,6 @@ a{
     background-repeat: no-repeat;
     background-position: 50%;
     margin: 0rem 2rem;
-    filter: grayscale(100%);
 }
 .avatar5:hover{
     background-image: 
@@ -188,13 +204,11 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../../assets/img/sofia.jpeg);
+    url(../img/sofia.jpeg);
     cursor: crosshair;
-    filter: none;
+    /* background-image: url(../img/mas.svg); */
 }
 .ver_perfil{
-    display: block;
-    align-self: start;
     background-color: var(--yellow);
     border-radius: 50px;
     border-color: transparent;
@@ -203,7 +217,7 @@ a{
     color: var(--grey);
     font-size: 1rem;
     font-weight: bold;
-    margin: 8% 0px;
+    margin: 8% auto;
 }
 .nombre{
     width: 60%;
@@ -246,7 +260,6 @@ body{
     width:100vw;
     height:100vh;
     position: relative;
-    z-index: -98;
 }
 h3{
     color: var(--white);
@@ -262,75 +275,6 @@ h3{
 .mail-form{
     margin-right: 20px;
 }
-
-
-@media screen and (max-width: 576px){
-    .perfiles{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-top: 3%;
-        gap: 10px;
-    }
-    .integrante{
-        border-color: var(--yellow);
-        border-style: solid;
-        border-radius: 50px;
-        border-width: 2px;
-        grid-template-columns: 2fr 1fr;
-    }
-    .image-header img{
-        width: 100%;
-    }
-    .image-header{
-        height: 300px;
-    }
-    .logo{
-        width: 40%;
-    }
-    .avatar1, .avatar2, .avatar3, .avatar4, .avatar5{
-        width: 150px;
-        height: 150px;
-        margin: 1rem 1rem;
-    }
-    .telefono, .mail{
-        margin-left: -3rem;
-    }
-}
-@media screen and (min-width: 498px){
-    .perfiles{
-        grid-template-columns: repeat(3, 1fr);
-        margin-top: 3%;
-    } 
-}
-@media screen and (max-width: 497px){
-    .titulo{
-        left: -36px;
-        top: 97px;
-        width: 14rem;
-    }
-    #contenedor-formulario{
-        margin-top: 7rem;
-    }
-    .semi-circulo-2, .cuarto-circulo{
-        display: none;
-    }
-    .mail-form, .asunto-form{
-        display: block;
-        width: 100%;
-    }
-    .mail-asunto-form{
-        display: block;
-    }
-    
-}
-
-@media screen and (min-width: 1366px){
-    .perfiles{
-        grid-template-columns: repeat(5, 20%);
-        margin-top: 3%;
-    }
-}
-
 
 input{
     font-style: italic;
@@ -402,4 +346,3 @@ input[type=submit]:hover{
     bottom: 0;
     right: 0;
 }
-/* Fin de formulario */

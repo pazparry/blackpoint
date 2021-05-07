@@ -102,7 +102,11 @@ body.page-template-page-fullsingle-me {
   line-height: 60px;
   letter-spacing: -0.5px;
   color: #ffffff;
+<<<<<<< HEAD:css/me.css
+  background-image: url("../img/background.jpg");
+=======
   background-image: url("../../assets/img/background.jpg");
+>>>>>>> 384d58c811b2539664edd48852ebc8aa4047f3e5:assets/css/me.css
   background-position: center center;
   background-size: cover; }
   body.page-template-page-fullsingle-me p {

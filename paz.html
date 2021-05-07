@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+	<link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="32x32">
+    <title>Blackpoint - Paz Parry</title>
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="assets/font/font.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="nav-prueba">
+        <nav class="navbar" id="navbar">
+            <img src="assets/img/blackpoint_logo.svg" alt="Blackpoint" class="logo">
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="navbar-ul" class="navbar-ul">
+                <li><a href="#header">Inicio</a></li>
+                <li><a href="#javiera">Javiera</a></li>
+                <li><a href="#macarena">Macarena</a></li>
+                <li><a href="nicolas.html">Nicolás</a></li>
+                <li><a href="paz.html">Paz</a></li>
+                <li><a href="sofia.html">Sofía</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <main>
+            <h1>Hola Mundo</h1>
+        </main>
+    </header>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
