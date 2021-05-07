@@ -11,6 +11,9 @@
 a{
     text-decoration: none;
 }
+.nav-prueba{
+    z-index: 999;
+}
 .image-header{
     background-image: 
     linear-gradient(
@@ -47,7 +50,6 @@ a{
 }
 .imagen_perfil{
     position: relative;
-    z-index: -99;
 }
 .integrante{
     display: grid;
@@ -123,7 +125,7 @@ a{
       rgba(231, 228, 8, 0.5),
       rgba(231, 228, 8, 0.5)
     ),
-    url(../assets/img/maca.jpeg);
+    url(../../assets/img/maca.jpeg);
     cursor: crosshair;
     filter: none;
 }
@@ -289,7 +291,6 @@ h3{
         width: 150px;
         height: 150px;
         margin: 1rem 1rem;
-        filter: grayscale(100%);
     }
     .telefono, .mail{
         margin-left: -3rem;
