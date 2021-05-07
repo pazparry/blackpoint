@@ -183,17 +183,14 @@ img{
     text-decoration:none;
     opacity:0.8;
   }
-  
   .footer-basic ul a:hover {
     opacity:1;
   }
-  
   .footer-basic .social {
     text-align:center;
     padding-top:25px;
     size: 15px;
   }
-  
   .footer-basic .social > a {
     font-size:24px;
     width:40px;
@@ -206,11 +203,9 @@ img{
     color:inherit;
     opacity:0.75;
   }
-  
   .footer-basic .social > a:hover {
     opacity:0.9;
   }
-  
   .footer-basic .copyright {
     margin-top:15px;
     text-align:center;
