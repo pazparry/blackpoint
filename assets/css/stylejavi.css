@@ -1,6 +1,6 @@
 *{
-margin: 0;
-padding: 0;    
+margin: 0%;
+padding: 0%;    
 }
 
 #container-01{
@@ -8,20 +8,20 @@ padding: 0;
     align-items: center;
     justify-content: space-between;
     background-color:black;
-    margin-top: -100px;
+    margin-top: -150px;
 }
 
 .name-img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 50px;
 
 }
 
 .container-text{
     justify-content: space-between;
-    padding: 70px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -36,18 +36,6 @@ p{
     color: white;
 }
 
-
-
-
-
-
-.featured-img{
-    width: 800px;
-    margin-right: 100px;
-    margin-top: 0px;
-    transform: scale(0.6);
-}
-
 .buttons-01{
     display: flex;
     justify-content: space-between;
@@ -55,13 +43,12 @@ p{
 }
 
 .btns{/*Color, forma, etc del contenedor que es el boton */
-    font-family:;
+    font-family:serif;
     padding: 20px;
     font-weight: 600;
-    font-size: 20px;
-    color: var(--grey);
+    font-size: 20px;    
     border-radius: 50px;
-    margin: 50px;
+    margin: 20px;
     font-size: 15px;
     text-decoration: none;
     text-align: center;
@@ -69,14 +56,22 @@ p{
 }
 
 .btns a{ /*Color del texto dentro del boton */
-    color: var(--grey);
+    color: white;
     font-weight: 800;
 }
 
 .button-cv{
-    background-color:yellow;
+    border: 2px solid yellow;
 }
 
 .button-log{
-    background-color: white;
+    border: 2px solid white;
+
+}
+
+.featured-img{
+    width: 800px;
+    margin-right: 800px;
+    margin-top: 0px;
+    transform: scale(0.62);
 }
