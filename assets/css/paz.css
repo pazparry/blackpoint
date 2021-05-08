@@ -55,6 +55,45 @@
 a {
     text-decoration: none;
 }
-.activo{
 
+/*Overlay*/
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.overlay.activo{
+    display: flex;
+}
+.overlay img{
+    max-width: 100%;
+}
+.overlay .descripcion{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    max-width: 50%;
+    color: var(--white);
+}
+.contenedor-img{
+    position: relative;
+}
+.overlay #btn-cerrar-popup{
+    background: none;
+    font-size: 1.5rem;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: -30px;
+    top: -30px;
 }
