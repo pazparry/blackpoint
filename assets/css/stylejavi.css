@@ -24,11 +24,7 @@ b{
 /*************************************** Profile con saludo y botones ***************************************/                      
 
 .container-profile{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color:black;
-    margin-top: -200px;
 }
      
 .name-img{
@@ -37,29 +33,7 @@ b{
     align-items: center;
     margin-left: 50px;
      
-}
-     
-.container-text{
-    justify-content: space-between;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-left: 15px;
-}
-          
-.buttons-01{
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    }
-.featured-img{
-    width: 300px; /*Separacion entre la imagen principal y el nombre*/
-    margin-right: 900px;
-    margin-top: 0px;
-    transform: scale(0.5);
-}
+}  
 
 .button-log{
     color:#fcfcfc;
@@ -70,10 +44,6 @@ b{
     border: 2px solid #fcfcfc;   
     border-radius: 50px;
 
-    padding: 20px;
-    width: 200px;
-    margin: 20px;
-    
     text-decoration: none;
     text-align: center;
 }
@@ -86,10 +56,6 @@ b{
 
     border: 2px solid #fac710;   
     border-radius: 50px;
-
-    padding: 20px;
-    width: 200px;
-    margin: 20px;
     
     text-decoration: none;
     text-align: center;
@@ -236,20 +202,117 @@ b{
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
     .example {background: green;}
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .example {background: blue;}
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .example {background: orange;}
+@media only screen and (min-width: 992px) {
+    .container-profile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -200px;
+    }
+         
+    .name-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 50px;
+    }
+         
+    .container-text{
+        justify-content: space-between;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 15px;
+    }
+              
+    .buttons-01{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    
+    .featured-img{
+        width: 800px; /*Separacion entre la imagen principal y el nombre*/
+        margin-right: 900px;
+        margin-top: 0px;
+        transform: scale(0.45);
+    }
+    
+    .button-log{
+        padding: 20px;
+        width: 200px;
+        margin: 20px;
+
+    }
+    
+    .button-cv{ 
+        padding: 20px;
+        width: 200px;
+        margin: 20px;
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .example {background: pink;}
+@media only screen and (min-width: 1200px) {
+    .container-profile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -200px;
+    }
+         
+    .name-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 50px;
+    }
+         
+    .container-text{
+        justify-content: space-between;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 15px;
+    }
+              
+    .buttons-01{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    
+    .featured-img{
+        width: 550px; /*Separacion entre la imagen principal y el nombre*/
+        margin-right: 900px;
+        margin-top: 0px;
+        transform: scale(0.7);
+    }
+    
+    .button-log{
+        padding: 20px;
+        width: 200px;
+        margin: 20px;
+
+    }
+    
+    .button-cv{ 
+        padding: 20px;
+        width: 200px;
+        margin: 20px;
+
+    }
+}
