@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <title>Blackpoint - Paz Parry</title>
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/paz.css">
     <link rel="stylesheet" href="assets/font/font.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -23,8 +24,8 @@
                 <i class="fas fa-bars"></i>
             </button>
             <ul id="navbar-ul" class="navbar-ul">
-                <li><a href="#header">Inicio</a></li>
-                <li><a href="#javiera">Javiera</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html/#javiera">Javiera</a></li>
                 <li><a href="#macarena">Macarena</a></li>
                 <li><a href="nicolas.html">Nicolás</a></li>
                 <li><a href="paz.html">Paz</a></li>
@@ -35,7 +36,70 @@
     </div>
     <header>
         <main>
-            <h1>Hola Mundo</h1>
+            <div class="container-paz">
+                <div class="texto-paz"><h1>Hola</h1></div>
+                <div class="foto-paz">
+                    <img src="/assets/img/Paz.png" alt="">
+                </div>
+            </div>
+            <div class="portafolio-paz">
+                <div class="categoria" id="categoria">
+                    <a href="#" class="activo">Todos</a>
+                    <a href="#">Web</a>
+                    <a href="#">Marca</a>
+                </div>
+            </div>
+            <section class="grid" id="grid">
+                <div class="item"
+                    data-categoria="marca"
+                    data-descripcion="Etiqueta vino Monsieur Franc - 2021">
+                    <div class="item-contenido">
+                        <img src="/assets/img/vino.png" alt="">
+                    </div>
+                </div>
+                <div class="item"
+                    data-categoria="web"
+                    data-descripcion="ninerasalrescate.cl sitio web, basado en Wordpress">
+                    <div class="item-contenido">
+                        <img src="/assets/img/nineras.png" alt="">
+                    </div>
+                </div>
+                <div class="item"
+                    data-categoria="marca"
+                    data-descripcion="Gráficas fachada Cinépolis La Reina, Chile">
+                    <div class="item-contenido">
+                        <img src="/assets/img/fachada.png" alt="">
+                    </div>
+                </div>
+                <div class="item"
+                    data-categoria="web"
+                    data-descripcion="Diseño web recoders.cl">
+                    <div class="item-contenido">
+                        <img src="/assets/img/recoders.png" alt="">
+                    </div>
+                </div>
+                <div class="item"
+                    data-categoria="web"
+                    data-descripcion="Diseño web weekendcode.cl">
+                    <div class="item-contenido">
+                        <img src="/assets/img/weekendcode.png" alt="">
+                    </div>
+                </div>
+                <div class="item"
+                    data-categoria="marca"
+                    data-descripcion="Diseño marca Dodi">
+                    <div class="item-contenido">
+                        <img src="/assets/img/dodi.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="overlay" id="overlay">
+                <div class="contenedor-img">
+                    <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                    <img src="assets/img/vino.png" alt="">
+                </div>
+                <p class="descripcion">Lorem ipsum dolor sit amet.</p>
+            </section>
         </main>
     </header>
     <script>
@@ -55,5 +119,8 @@
     </script>
     <script src="assets/js/scroll.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="assets/js/main-paz.js"></script>
 </body>
 </html>
