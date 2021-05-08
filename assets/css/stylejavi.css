@@ -1,18 +1,34 @@
+/*************************************** Elementos en comun en la página ***************************************/                      
 *{
     margin: 0%;
     padding: 0%;    
 }
-     
+
 body{
-    background-color: grey;
+    /*background-color: grey; /*Color de todo el background, esto sirve para cuando le pongo margin no se vea otro color de fondo*/
+}
+
+p{    
+    color:#fcfcfc;
+    font-size: 20px;
+
+    line-height: 2;
+    margin-left: 40px;
+    text-align: justify;
 }
      
+b{
+    color: #fac710;
+}
+
+/*************************************** Profile con saludo y botones ***************************************/                      
+
 .container-profile{
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color:black;
-    margin-top: -250px;
+    margin-top: -200px;
 }
      
 .name-img{
@@ -32,27 +48,19 @@ body{
     width: 100%;
     margin-left: 15px;
 }
-     
-p{
-    margin-left: 40px;
-    font-size: 20px;
-    text-align: justify;
-    color:#fcfcfc;
-    line-height: 2;
-
-}
-     
-b{
-    color: #fac710;
-}
-     
+          
 .buttons-01{
     display: flex;
     justify-content: space-between;
     gap: 50px;
     }
-     
-     
+.featured-img{
+    width: 300px; /*Separacion entre la imagen principal y el nombre*/
+    margin-right: 900px;
+    margin-top: 0px;
+    transform: scale(0.5);
+}
+
 .button-log{
     color:#fcfcfc;
     font-size: 20px; 
@@ -69,19 +77,14 @@ b{
     text-decoration: none;
     text-align: center;
 }
-     
-.button-log:hover{
-    background-color: #fcfcfc;
-    color: black;
-}
-     
+
 .button-cv{ 
     color: #fac710;
     font-size: 20px; 
     font-family:serif;
     font-weight: 600;
 
-    border: 2px solid #fcfcfc;   
+    border: 2px solid #fac710;   
     border-radius: 50px;
 
     padding: 20px;
@@ -91,21 +94,21 @@ b{
     text-decoration: none;
     text-align: center;
 }
-     
+
+/*************************************** Condiciones del hover para los botones ***************************************/                      
+
+.button-log:hover{
+    background-color: #fcfcfc;
+    color: black;
+}
+ 
 .button-cv:hover{
     background-color:#fac710;
     border: 2px solid #fac710;   
     color: black;
 }
-     
-.featured-img{
-    width: 300px; /*Separacion entre la imagen principal y el nombre*/
-    margin-right: 900px;
-    margin-top: 0px;
-    transform: scale(0.5);
-}
-     
-                                                           /***************************************Portafolio***************************************/                      
+ 
+/*************************************** Portafolio ***************************************/                      
      
 .container-portfolio{
     display: flex;
@@ -132,15 +135,7 @@ b{
     background-color: grey;
     padding-bottom: 70px;
 }
-     
-     
-     
-     
-     
-     
-     
-     
-     
+         
 .photos{
     height: 500px;
     width: 500px;
@@ -155,6 +150,8 @@ b{
     object-fit: cover;
     filter: none;
 }
+
+/*************************************** Condiciones para el hover en las imagenes del portafolio ***************************************/                      
      
 .overlay {
     opacity: 0;
@@ -165,7 +162,6 @@ b{
     filter: grayscale();
     filter: brightness(0.3);    
     background-position: center;
-
 }
      
 .photos:hover .overlay {
@@ -230,3 +226,30 @@ b{
     font-size: 20px;
     justify-content: center; 
 }
+
+/*************************************** Responsive ***************************************/                      
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .example {background: red;}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .example {background: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
