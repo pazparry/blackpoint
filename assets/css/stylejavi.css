@@ -1,12 +1,12 @@
 *{
-margin: 0%;
-padding: 0%;    
+    margin: 0%;
+    padding: 0%;    
 }
-
+     
 body{
     background-color: grey;
 }
-
+     
 .container-profile{
     display: flex;
     align-items: center;
@@ -14,15 +14,15 @@ body{
     background-color:black;
     margin-top: -250px;
 }
-
+     
 .name-img{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 50px;
-
+     
 }
-
+     
 .container-text{
     justify-content: space-between;
     padding: 30px;
@@ -32,76 +32,81 @@ body{
     width: 100%;
     margin-left: 15px;
 }
-
+     
 p{
     margin-left: 40px;
     font-size: 20px;
     text-align: justify;
     color:#fcfcfc;
-}
+    line-height: 2;
 
+}
+     
 b{
     color: #fac710;
 }
-
+     
 .buttons-01{
     display: flex;
     justify-content: space-between;
     gap: 50px;
-}
-
-
+    }
+     
+     
 .button-log{
     color:#fcfcfc;
-    border: 2px solid #fcfcfc;    
-    font-weight: 800;    
+    font-size: 20px; 
     font-family:serif;
-    padding: 20px;
     font-weight: 600;
-    font-size: 20px;    
+
+    border: 2px solid #fcfcfc;   
     border-radius: 50px;
+
+    padding: 20px;
+    width: 200px;
     margin: 20px;
-    font-size: 15px;
+    
     text-decoration: none;
     text-align: center;
-    width: 200px;
 }
-
+     
 .button-log:hover{
     background-color: #fcfcfc;
     color: black;
 }
-
-.button-cv{ /*Color y tamaño del texto dentro del boton cv*/
+     
+.button-cv{ 
     color: #fac710;
-    border: 2px solid #fac710;
-    font-weight: 800;
+    font-size: 20px; 
     font-family:serif;
-    padding: 20px;
     font-weight: 600;
-    font-size: 20px;    
+
+    border: 2px solid #fcfcfc;   
     border-radius: 50px;
+
+    padding: 20px;
+    width: 200px;
     margin: 20px;
-    font-size: 15px;
+    
     text-decoration: none;
     text-align: center;
-    width: 200px;
 }
-
+     
 .button-cv:hover{
     background-color:#fac710;
+    border: 2px solid #fac710;   
     color: black;
 }
-
+     
 .featured-img{
     width: 300px; /*Separacion entre la imagen principal y el nombre*/
     margin-right: 900px;
     margin-top: 0px;
     transform: scale(0.5);
 }
-
-/*Portafolio*/
-
+     
+                                                           /***************************************Portafolio***************************************/                      
+     
 .container-portfolio{
     display: flex;
     align-items: center;
@@ -109,14 +114,14 @@ b{
     background-color:grey;
     margin-top: 70px;
 }
-
+     
 .proyectos{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 50px;
 } 
-
+     
 .container-photos{
     display: grid;
     grid-template-columns: repeat(3, 500px);
@@ -127,13 +132,22 @@ b{
     background-color: grey;
     padding-bottom: 70px;
 }
-
+     
+     
+     
+     
+     
+     
+     
+     
+     
 .photos{
     height: 500px;
     width: 500px;
-    transition: all 0.4s;    
+    transition: all 0.4s;       
+    position: relative;
 }
-
+     
 .photos img{
     border-radius: 20%;    
     width: 100%;
@@ -141,9 +155,78 @@ b{
     object-fit: cover;
     filter: none;
 }
+     
+.overlay {
+    opacity: 0;
+    transition: .5s;
+}
 
 .photos img:hover{
     filter: grayscale();
-    filter: brightness(0.5);
+    filter: brightness(0.3);    
     background-position: center;
+
+}
+     
+.photos:hover .overlay {
+    opacity: 1;
+}
+     
+.texto{
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    font-size: 20px;
+     
+    text-align:center;
+    align-items: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20%;   
+    display: flex;
+    justify-content: center; 
+}  
+
+.btn-trailer{
+    text-align:center;
+    align-items: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20%;   
+    display: flex;
+    justify-content: center; 
+} 
+
+.button-trailer{
+    background-color: #fac710;
+    border: 2px solid black; 
+    border-radius: 15px;
+
+    position: absolute;
+    top: 65%;
+
+    padding: 10px;
+    width: 70px;
+    margin: 10px; 
+}
+
+.btn-trailer a{
+    color: black;
+    font-size: 20px;
+    justify-content: center; 
 }
