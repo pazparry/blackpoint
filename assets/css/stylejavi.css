@@ -12,6 +12,10 @@ body{
 p{    
     color:#fcfcfc;
     text-align: justify;
+    font-size: 20px;
+        
+    line-height: 2;
+    margin-left: 40px;
 
 }
      
@@ -27,6 +31,12 @@ b{
 
     display: flex;
     align-items: center;
+    flex-direction:row;
+
+    justify-content: space-between;
+    max-width: auto;
+    margin: 0 auto;
+    margin-top: 0px;
 }
      
 .name-img{
@@ -34,7 +44,6 @@ b{
     flex-direction: column;
     align-items: center;
 
-    width: 60%;
     padding: 1rem;
 } 
 
@@ -43,21 +52,32 @@ b{
 }
 
 .featured-img{
-    width: 40%;
     padding: 1rem;
 }
+
 .featured-img img{
     width: 100%;
 }
 
 .container-text{
     display: flex;
-
 }
 
 .buttons-01{
     display: flex;
     justify-content: space-between;
+}
+
+.button-log{
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
+
+.button-cv{ 
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
 }
 
 .button-log{
@@ -219,72 +239,98 @@ b{
 }
 
 /*************************************** Responsive ***************************************/                      
-/* Extra large devices (large laptops and desktops, 1800px and up) */
+/* Laptop*/
 @media only screen and (min-width: 992px) {
-    p{    
-        font-size: 20px;
-        
-        line-height: 2;
-        margin-left: 40px;
+    .name-img{
+        width: 70%;
     }
 
-    .container-profile{
-        justify-content: space-between;
-        max-width: 100vw;
-        margin: 0 auto;
-        margin-top: 0px;
-    } 
+    .name-img img{
+        max-width:45vw;
+        height:auto;
+    }
+
+    .featured-img{
+        width: 30%;
+    }
 
     .container-text{
+        margin-top: -50px;
         padding: 50px;
-        width: 80%;
+        width: 90%;
     }
     
     .buttons-01{
+        margin-top: -50px;
         gap: 50px;
-    }
-    .button-log{
-        margin: 20px;
-        padding: 20px;
-        width: 200px;
-    }
-    
-    .button-cv{ 
-        margin: 20px;
-        padding: 20px;
-        width: 200px;
     }
 }
 
-/*@media only screen and (min-width: 992px) {
-    p{    
-        font-size: 20px;
+/*Ipad*/
+@media only screen and (max-width:992px) {
+    .name-img{
+        width: 60%;
+    }
     
-        line-height: 2;
-        margin-left: 40px;
+    .name-img img{
+        margin-top: 30px;
+
+        max-width:45vw;
+        height:auto;
     }
 
-    .container-profile{
-        margin-top: 0px;
-    }  
+    .featured-img{
+        width: 40%;
+        display: flex;
+        margin-top: -380px;
+    }
 
     .container-text{
+        margin-top: 50px;
+        margin-left: 50%;
         padding: 50px;
-        width: 80%;
+        width: 150%;
     }
     
     .buttons-01{
+        margin-top: -50px;
+        margin-left: 50%;
         gap: 50px;
     }
-    .button-log{
-        margin: 20px;
-        padding: 20px;
-        width: 200px;
+
+    /*Mobile*/
+    @media only screen and (min-device-width : 320px) and (max-device-width :768px) {   
+    .container-portafolio{
+        flex-direction : column;
+    }
+
+    .name-img {
+        width:100%;
     }
     
-    .button-cv{ 
-        margin: 20px;
-        padding: 20px;
-        width: 200px;
-    }*/
+    .name-img img { 
+        width: 100%;
+    }
+
+    .featured-img {
+        width:100%;
+    }
+
+    .featured-img image{
+        justify-content: center;
+    }
+
+    .container-text{
+        margin-top: 50px;
+        margin-left: 50%;
+        padding: 50px;
+        width: 100%;
+    }
+    
+    .buttons-01{
+        margin-top: -50px;
+        margin-left: 50%;
+        width: 50%;
+        gap: 50px;
+    }
 }
