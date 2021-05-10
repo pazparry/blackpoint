@@ -60,17 +60,19 @@ b{
 
 .buttons-01{
     display: flex;
-    justify-content: space-between;
+
+    justify-content: center;
+    padding: 1rem;
 }
 
 .button-log{
-    margin-top: 20px;
+    margin: 20px;
     padding: 20px;
     width: 200px;
 }
 
 .button-cv{ 
-    margin-top: 20px;
+    margin: 20px;
     padding: 20px;
     width: 200px;
 }
@@ -119,40 +121,35 @@ b{
 .container-portfolio{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color:grey;
-    margin-top: 70px;
+    flex-direction:row;
+
+    max-width: auto;
+    margin: 0 auto;
+
+    padding: 1rem;
 }
      
 .proyectos{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 50px;
 } 
      
 .container-photos{
-    display: grid;
-    grid-template-columns: repeat(3, 500px);
     justify-content: center;
-    align-items: center;
     gap: 70px;
-    margin-top: 70px;
-    background-color: grey;
-    padding-bottom: 70px;
 }
          
 .photos{
-    height: 500px;
-    width: 500px;
-    transition: all 0.4s;       
     position: relative;
 }
      
 .photos img{
-    border-radius: 20%;    
+    border-radius: 20%;   
+     
     width: 100%;
     height: 100%;
+
     object-fit: cover;
     filter: none;
 }
@@ -258,9 +255,22 @@ b{
     }
     
     .buttons-01{
-        gap: 80px;
+        gap: 50px;
     }
-    
+
+    .container-photos{
+        display: grid;
+        grid-template-columns: repeat(3, 500px);
+    }
+
+    .photos{
+        width: 100%;
+    }
+
+    .photos img{
+        max-width: 100%;
+    }
+
 }
 
 /*Ipad*/
@@ -280,12 +290,7 @@ b{
 
     .featured-img{
         width: 40%;
-        display: flex;
-        align-content:;
-    }
-
-    .featured-img img{
-        width: 100%;
+        height: auto;    
     }
     
     .buttons-01{
@@ -310,7 +315,7 @@ b{
     }
 
     .featured-img {
-        width:50%;
+        width:100%;
     }
 
     .featured-img image{
