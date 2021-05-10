@@ -1,10 +1,16 @@
 .container-paz{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: teal;
-    column-gap: 100px;
+    column-gap: 20px;
     width: 90%;
-    margin: auto;
+    margin: 6rem auto 1rem auto;
+}
+.titulo-portafolio{
+    width: 50%;
+    margin-top: 2rem;
+}
+.texto-paz{
+    color: var(--white);
 }
 /* Portafolio */
 .portafolio-paz{
@@ -41,7 +47,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #99bb99;
 }
 .categoria a{
     margin: 1rem 2rem;
