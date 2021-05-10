@@ -5,12 +5,14 @@
     --white: whitesmoke;
     --grey: #202020;
   }
-
 *{
     padding: 0;
     margin: 0;
 }
 .nav-prueba{
+    background-color: var(--grey);
+}
+.body{
     background-color: var(--grey);
 }
 
@@ -32,7 +34,7 @@
 }
 .foto-principal-maca{
     width: 600px;
-    margin-right: 50px;
+    margin-right: 60px;
 }
 .primeros-botones{
     display: flex;
@@ -43,7 +45,6 @@
     font-family: 'Lato', sans-serif;
     padding: 20px;
     font-weight: 600;
-    font-size: 20px;
     color: var(--grey);
     border-radius: 50px;
     margin: 15px;
@@ -62,7 +63,6 @@
 .boton-wa{
     background-color: var(--white);
 }
-
 /* SEGUNDO RECUADRO */
 .segundo-contenedor{
     background-color: var(--yellow);
@@ -86,13 +86,12 @@ p{
     margin-left: 40px;
     font-size: 20px;
     text-align: justify;
+    width: 93%;
 }
 .saludo{
     width: 250px;
 }
-
 /* TERCER RECUADRO */
-
 .tercer-contenedor{
     display: flex;
     justify-content: center;
@@ -103,7 +102,6 @@ p{
 #caja-mis-trabajos{
     display: grid;
     grid-template-columns: repeat(3, 240px);
-    /*grid-template-columns: 1fr 1fr 1fr;*/
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -116,27 +114,28 @@ p{
     align-items: center;
     width: 400px;
 }  
-
 .boxzoom{
     height: 240px;
     width: 240px;
     transition: all 0.4s; 
 }
-
 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: none;
 }
 .boxzoom img{
     border-radius: 100%;
-    /* background: rgb(255, 146, 4);
-    mix-blend-mode: multiply; */
+    filter:grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    /* filter:hue-rotate(60deg) brightness(500%); */
 }
 .boxzoom img:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
+    cursor: crosshair;
+    filter: none;
 }
-
 .caja-boton-trabajos{
     background-color: var(--grey);
     display: flex;
@@ -149,7 +148,6 @@ img{
     padding: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
-    font-size: 20px;
     border-radius: 50px;
     margin: 15px;
     font-size: 16px;
@@ -161,55 +159,321 @@ img{
     color: var(--grey);
     font-weight: 800;
 }
-/*     
-.boxzoom img{
-    border-radius: 100%;
-    display: block;
-    mix-blend-mode: normal;
-    filter: grayscale(100%);
-}
-.boxzoom img:hover{
-    transform: scale(1.5);
-    display: block;
-    mix-blend-mode: normal;
-    filter: none;
-} */
-    
+/* FOOTER RECUADRO --------------------------------------------------------------------- */
 .footer-basic{
     background-color: var(--yellow);
 }
-.footer-basic ul a {
-    color:inherit;
-    text-decoration:none;
-    opacity:0.8;
-  }
-  .footer-basic ul a:hover {
+.footer-basic ul a:hover {
     opacity:1;
-  }
-  .footer-basic .social {
+}
+.footer-basic .social {
     text-align:center;
     padding-top:25px;
     size: 15px;
-  }
-  .footer-basic .social > a {
+}
+.footer-basic .social > a {
     font-size:24px;
     width:40px;
     height:40px;
     line-height:40px;
     display:inline-block;
     text-align:center;
-    border-radius:50%;
     margin:0 8px;
-    color:inherit;
     opacity:0.75;
-  }
-  .footer-basic .social > a:hover {
+}
+.footer-basic .social > a:hover {
     opacity:0.9;
-  }
-  .footer-basic .copyright {
+}
+.footer-basic .copyright {
     margin-top:15px;
     text-align:center;
     font-size:13px;
     color:var(--yellow);
     margin-bottom:0px;
-  }
+    padding-bottom: 0px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px){
+    #primer-contenedor{
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    .nombre-maca{
+        width: 85%;
+        margin-left: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .foto-principal-maca{
+        width: 0px;
+        margin-right: 0px;
+        visibility: hidden;
+        display: none;
+    }
+    .primeros-botones{
+        flex-direction: column;
+    }
+    .boton-general{
+        padding: 15px;
+        margin: 0px;
+        width: 200px;
+    }
+/* 2 */
+    .segundo-contenedor{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .foto-perfil-segundocontenedor{
+        width: 60%;
+        margin-left: 0px;
+    }
+    .contenedorsaludo-texto{
+        align-items: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+    p{
+        margin-left: 0px;
+        font-size: 16px;
+        width: 100%;
+    }
+    .saludo{
+        width: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0px;
+    }
+/* 3 */
+    .tercer-contenedor{
+        padding: 40px;
+    }
+    #caja-mis-trabajos{
+        grid-template-columns: repeat(1, 240px);
+        padding-bottom: 0px 0px 0px 0px;
+    }
+    #titulo-mis-trabajos img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }  
+    .caja-boton-trabajos{
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .nombre-maca{
+        width: 80%;
+        margin-left: 0px;
+    }
+    .foto-principal-maca{
+        margin-right: 0px;
+    }
+    .boton-general{
+        padding: 10px;
+        margin: 10px;
+        width: 150px;
+    }
+/* 2 */
+    .segundo-contenedor{
+        padding: 40px;
+    }
+    .foto-perfil-segundocontenedor{
+        width: 60%;
+        margin-left: 0px;
+    }
+    .contenedorsaludo-texto{
+        margin-left: 0px;
+    }
+    p{
+        font-size: 14px;
+        margin: 1px 1px 1px 20px;
+    }
+    .saludo{
+        width: 130px;
+    }
+/* 3 */
+
+    .tercer-contenedor{
+        padding: 40px;
+        width: 100%;
+    }
+    #caja-mis-trabajos{
+        grid-template-columns: repeat(2, 240px);
+        padding-bottom: 0px 0px 0px 0px;
+    }
+    /* #caja-mis-trabajos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0px 0px 0px 0px;
+    } */
+    #titulo-mis-trabajos img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }  
+    .caja-boton-trabajos{
+        padding: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+    .nombre-maca{
+        width: 80%;
+        margin-left: 0px;
+    }
+    .foto-principal-maca{
+        margin-right: 0px;
+    }
+    .boton-general{
+        padding: 10px;
+        margin: 10px;
+        width: 150px;
+    }
+/* 2 */
+    .segundo-contenedor{
+        padding: 40px;
+    }
+    .foto-perfil-segundocontenedor{
+        width: 60%;
+        margin-left: 0px;
+    }
+    .contenedorsaludo-texto{
+        margin-left: 0px;
+    }
+    p{
+        font-size: 14px;
+        margin: 1px 1px 1px 20px;
+    }
+    .saludo{
+        width: 130px;
+    }
+/* 3 */
+    .tercer-contenedor{
+        padding: 40px;
+        width: 100%;
+    }
+    #caja-mis-trabajos{
+        grid-template-columns: repeat(2, 240px);
+        padding-bottom: 0px 0px 0px 0px;
+    }
+    #titulo-mis-trabajos img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }  
+    .caja-boton-trabajos{
+        padding: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+    .nombre-maca{
+        width: 80%;
+        margin-left: 0px;
+    }
+    .foto-principal-maca{
+        margin-right: 20px;
+    }
+    .boton-general{
+        padding: 10px;
+        margin: 10px;
+        width: 150px;
+    }
+/* 2 */
+    .segundo-contenedor{
+        padding: 40px;
+    }
+    .foto-perfil-segundocontenedor{
+        width: 40%;
+        margin-left: 0px;
+    }
+    .contenedorsaludo-texto{
+        margin-left: 0px;
+    }
+    p{
+        font-size: 18px;
+        margin: 1px 1px 1px 20px;
+    }
+    .saludo{
+        width: 160px;
+    }
+/* 3 */
+    .tercer-contenedor{
+        padding: 40px;
+        width: 100%;
+    }
+    #caja-mis-trabajos{
+        grid-template-columns: repeat(3, 240px);
+        padding-bottom: 0px 0px 0px 0px;
+    }
+    #titulo-mis-trabajos img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+    }  
+    .caja-boton-trabajos{
+        padding: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .nombre-maca{
+        width: 80%;
+        margin-left: 40px;
+    }
+    .foto-principal-maca{
+        margin-right: 60px;
+    }
+    .boton-general{
+        padding: 20px;
+        margin: 15px;
+        width: 200px;
+    }
+/* 2 */
+    .segundo-contenedor{
+        padding: 60px;
+    }
+    .foto-perfil-segundocontenedor{
+        width: 40%;
+        margin-left: 0px;
+    }
+    .contenedorsaludo-texto{
+        margin-left: 0px;
+    }
+    p{
+        font-size: 22px;
+        margin-left: 40px;
+    }
+    .saludo{
+        width: 250px;
+    }
+/* 3 */
+    .tercer-contenedor{
+        padding: 40px;
+        width: 100%;
+    }
+    #caja-mis-trabajos{
+        grid-template-columns: repeat(3, 240px);
+        padding-bottom: 0px 0px 0px 0px;
+    }
+    #titulo-mis-trabajos img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+    }  
+    .caja-boton-trabajos{
+        padding: 50px;
+    }
+}
