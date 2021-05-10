@@ -1,58 +1,65 @@
+/*************************************** Elementos en comun en la página ***************************************/                      
 *{
     margin: 0%;
     padding: 0%;    
 }
-     
+
 body{
-    background-color: grey;
+    background-color: grey; /*Color de todo el background, esto sirve para cuando le pongo margin no se vea otro color de fondo*/
 }
-     
-.container-profile{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:black;
-    margin-top: -250px;
-}
-     
-.name-img{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 50px;
-     
-}
-     
-.container-text{
-    justify-content: space-between;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-left: 15px;
-}
-     
-p{
-    margin-left: 40px;
-    font-size: 20px;
-    text-align: justify;
+
+
+p{    
     color:#fcfcfc;
-    line-height: 2;
+    text-align: justify;
 
 }
      
 b{
     color: #fac710;
 }
+
+/*************************************** Profile con saludo y botones ***************************************/                      
+
+.container-profile{
+    background-color:black;
+    margin-bottom: 70px;
+
+    display: flex;
+    align-items: center;
+}
      
+.name-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 60%;
+    padding: 1rem;
+} 
+
+.name-img img{
+    width: 100%;
+}
+
+.featured-img{
+    width: 40%;
+    padding: 1rem;
+}
+.featured-img img{
+    width: 100%;
+}
+
+.container-text{
+    display: flex;
+
+}
+
 .buttons-01{
     display: flex;
     justify-content: space-between;
-    gap: 50px;
-    }
-     
-     
+}
+
 .button-log{
     color:#fcfcfc;
     font-size: 20px; 
@@ -62,50 +69,37 @@ b{
     border: 2px solid #fcfcfc;   
     border-radius: 50px;
 
-    padding: 20px;
-    width: 200px;
-    margin: 20px;
-    
     text-decoration: none;
     text-align: center;
 }
-     
-.button-log:hover{
-    background-color: #fcfcfc;
-    color: black;
-}
-     
+
 .button-cv{ 
     color: #fac710;
     font-size: 20px; 
     font-family:serif;
     font-weight: 600;
 
-    border: 2px solid #fcfcfc;   
+    border: 2px solid #fac710;   
     border-radius: 50px;
-
-    padding: 20px;
-    width: 200px;
-    margin: 20px;
     
     text-decoration: none;
     text-align: center;
 }
-     
+
+/*************************************** Condiciones del hover para los botones ***************************************/                      
+
+.button-log:hover{
+    background-color: #fcfcfc;
+    color: black;
+}
+ 
 .button-cv:hover{
     background-color:#fac710;
     border: 2px solid #fac710;   
     color: black;
 }
-     
-.featured-img{
-    width: 300px; /*Separacion entre la imagen principal y el nombre*/
-    margin-right: 900px;
-    margin-top: 0px;
-    transform: scale(0.5);
-}
-     
-                                                           /***************************************Portafolio***************************************/                      
+ 
+/*************************************** Portafolio ***************************************/                      
      
 .container-portfolio{
     display: flex;
@@ -132,15 +126,7 @@ b{
     background-color: grey;
     padding-bottom: 70px;
 }
-     
-     
-     
-     
-     
-     
-     
-     
-     
+         
 .photos{
     height: 500px;
     width: 500px;
@@ -155,6 +141,8 @@ b{
     object-fit: cover;
     filter: none;
 }
+
+/*************************************** Condiciones para el hover en las imagenes del portafolio ***************************************/                      
      
 .overlay {
     opacity: 0;
@@ -165,7 +153,6 @@ b{
     filter: grayscale();
     filter: brightness(0.3);    
     background-position: center;
-
 }
      
 .photos:hover .overlay {
@@ -229,4 +216,75 @@ b{
     color: black;
     font-size: 20px;
     justify-content: center; 
+}
+
+/*************************************** Responsive ***************************************/                      
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (min-width: 992px) {
+    p{    
+        font-size: 20px;
+        
+        line-height: 2;
+        margin-left: 40px;
+    }
+
+    .container-profile{
+        justify-content: space-between;
+        max-width: 100vw;
+        margin: 0 auto;
+        margin-top: 0px;
+    } 
+
+    .container-text{
+        padding: 50px;
+        width: 80%;
+    }
+    
+    .buttons-01{
+        gap: 50px;
+    }
+    .button-log{
+        margin: 20px;
+        padding: 20px;
+        width: 200px;
+    }
+    
+    .button-cv{ 
+        margin: 20px;
+        padding: 20px;
+        width: 200px;
+    }
+}
+
+/*@media only screen and (min-width: 992px) {
+    p{    
+        font-size: 20px;
+    
+        line-height: 2;
+        margin-left: 40px;
+    }
+
+    .container-profile{
+        margin-top: 0px;
+    }  
+
+    .container-text{
+        padding: 50px;
+        width: 80%;
+    }
+    
+    .buttons-01{
+        gap: 50px;
+    }
+    .button-log{
+        margin: 20px;
+        padding: 20px;
+        width: 200px;
+    }
+    
+    .button-cv{ 
+        margin: 20px;
+        padding: 20px;
+        width: 200px;
+    }*/
 }
