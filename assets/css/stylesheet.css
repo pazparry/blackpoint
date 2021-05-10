@@ -247,6 +247,7 @@ body{
     height:100vh;
     position: relative;
     z-index: -98;
+    margin-top: 3rem;
 }
 h3{
     color: var(--white);

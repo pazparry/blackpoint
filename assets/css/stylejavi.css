@@ -1,0 +1,290 @@
+/*************************************** Elementos en comun en la página ***************************************/                      
+*{
+    margin: 0%;
+    padding: 0%;    
+}
+
+body{
+    background-color: grey; /*Color de todo el background, esto sirve para cuando le pongo margin no se vea otro color de fondo*/
+}
+
+
+p{    
+    color:#fcfcfc;
+    text-align: justify;
+
+}
+     
+b{
+    color: #fac710;
+}
+
+/*************************************** Profile con saludo y botones ***************************************/                      
+
+.container-profile{
+    background-color:black;
+    margin-bottom: 70px;
+
+    display: flex;
+    align-items: center;
+}
+     
+.name-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 60%;
+    padding: 1rem;
+} 
+
+.name-img img{
+    width: 100%;
+}
+
+.featured-img{
+    width: 40%;
+    padding: 1rem;
+}
+.featured-img img{
+    width: 100%;
+}
+
+.container-text{
+    display: flex;
+
+}
+
+.buttons-01{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-log{
+    color:#fcfcfc;
+    font-size: 20px; 
+    font-family:serif;
+    font-weight: 600;
+
+    border: 2px solid #fcfcfc;   
+    border-radius: 50px;
+
+    text-decoration: none;
+    text-align: center;
+}
+
+.button-cv{ 
+    color: #fac710;
+    font-size: 20px; 
+    font-family:serif;
+    font-weight: 600;
+
+    border: 2px solid #fac710;   
+    border-radius: 50px;
+    
+    text-decoration: none;
+    text-align: center;
+}
+
+/*************************************** Condiciones del hover para los botones ***************************************/                      
+
+.button-log:hover{
+    background-color: #fcfcfc;
+    color: black;
+}
+ 
+.button-cv:hover{
+    background-color:#fac710;
+    border: 2px solid #fac710;   
+    color: black;
+}
+ 
+/*************************************** Portafolio ***************************************/                      
+     
+.container-portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:grey;
+    margin-top: 70px;
+}
+     
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+} 
+     
+.container-photos{
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 70px;
+    background-color: grey;
+    padding-bottom: 70px;
+}
+         
+.photos{
+    height: 500px;
+    width: 500px;
+    transition: all 0.4s;       
+    position: relative;
+}
+     
+.photos img{
+    border-radius: 20%;    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: none;
+}
+
+/*************************************** Condiciones para el hover en las imagenes del portafolio ***************************************/                      
+     
+.overlay {
+    opacity: 0;
+    transition: .5s;
+}
+
+.photos img:hover{
+    filter: grayscale();
+    filter: brightness(0.3);    
+    background-position: center;
+}
+     
+.photos:hover .overlay {
+    opacity: 1;
+}
+     
+.texto{
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    font-size: 20px;
+     
+    text-align:center;
+    align-items: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20%;   
+    display: flex;
+    justify-content: center; 
+}  
+
+.btn-trailer{
+    text-align:center;
+    align-items: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20%;   
+    display: flex;
+    justify-content: center; 
+} 
+
+.button-trailer{
+    background-color: #fac710;
+    border: 2px solid black; 
+    border-radius: 15px;
+
+    position: absolute;
+    top: 65%;
+
+    padding: 10px;
+    width: 70px;
+    margin: 10px; 
+}
+
+.btn-trailer a{
+    color: black;
+    font-size: 20px;
+    justify-content: center; 
+}
+
+/*************************************** Responsive ***************************************/                      
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (min-width: 992px) {
+    p{    
+        font-size: 20px;
+        
+        line-height: 2;
+        margin-left: 40px;
+    }
+
+    .container-profile{
+        justify-content: space-between;
+        max-width: 100vw;
+        margin: 0 auto;
+        margin-top: 0px;
+    } 
+
+    .container-text{
+        padding: 50px;
+        width: 80%;
+    }
+    
+    .buttons-01{
+        gap: 50px;
+    }
+    .button-log{
+        margin: 20px;
+        padding: 20px;
+        width: 200px;
+    }
+    
+    .button-cv{ 
+        margin: 20px;
+        padding: 20px;
+        width: 200px;
+    }
+}
+
+/*@media only screen and (min-width: 992px) {
+    p{    
+        font-size: 20px;
+    
+        line-height: 2;
+        margin-left: 40px;
+    }
+
+    .container-profile{
+        margin-top: 0px;
+    }  
+
+    .container-text{
+        padding: 50px;
+        width: 80%;
+    }
+    
+    .buttons-01{
+        gap: 50px;
+    }
+    .button-log{
+        margin: 20px;
+        padding: 20px;
+        width: 200px;
+    }
+    
+    .button-cv{ 
+        margin: 20px;
+        padding: 20px;
+        width: 200px;
+    }*/
+}
