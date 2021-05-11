@@ -247,7 +247,6 @@ body{
     width:100vw;
     height:100vh;
     position: relative;
-    z-index: -98;
     margin-top: 3rem;
 }
 h3{
@@ -346,6 +345,11 @@ input{
     box-sizing: border-box;
 }
 input[type=submit]{
+    font-style: normal;
+    background-color: var(--yellow);
+    font-weight: bolder;
+}
+.btn-form{
     font-style: normal;
     background-color: var(--yellow);
     font-weight: bolder;
