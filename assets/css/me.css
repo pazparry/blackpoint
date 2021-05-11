@@ -20,22 +20,24 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--grey);
+  padding: 50px;
 }
 .costadoizq-foto{
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 .nombre-nico{
-  width: 70%;
+  width: 60%;
 }
+
 .foto-principal-nico{
-  height: 400px;
+  height: 500px;
   width: 400px;
   margin-right: 100px;
 }
 .primeros-botones{
-  width: 400px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -74,12 +76,10 @@
 }
 #caja-mis-trabajos{
   display: grid;
-  grid-template-columns: repeat(3, 240px);
   justify-content: center;
   align-items: center;
   gap: 30px;
   background-color: var(--grey);
-  padding-bottom: 10px;
 }
 #titulo-mis-trabajos img{
   display: flex;
@@ -167,3 +167,160 @@ img{
   margin-bottom:0px;
   padding-bottom: 0px;
 }
+
+@media only screen and (max-width: 600px){
+  /* NAV */    
+      .navbar {
+          background-color:var(--grey);
+      }    
+  
+  /* 1 */
+      #primer-contenedor{
+          flex-direction: column;
+          padding-bottom: 40px;
+      }
+      .nombre-nico{
+          width: 85%;
+          margin-left: 0px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+      }
+      .foto-principal-nico{
+          width: 0px;
+          margin-right: 0px;
+          visibility: hidden;
+          display: none;
+      }
+      .primeros-botones{
+          flex-direction: column;
+      }
+      .boton-general{
+          padding: 15px;
+          margin: 0px;
+          width: 200px;
+      }
+
+  /* 2 */
+      .tercer-contenedor{
+          padding: 40px;
+      }
+      #caja-mis-trabajos{
+          grid-template-columns: repeat(1, 240px);
+          padding-bottom: 0;
+      }
+      #titulo-mis-trabajos img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 300px;
+      }  
+      .caja-boton-trabajos{
+          padding: 30px;
+      }
+  }
+
+  @media only screen and (min-width: 768px){
+    /* NAV */    
+        .navbar {
+            background-color:var(--grey);
+        }    
+    /* 1 */
+        .nombre-nico{
+            width: 80%;
+            margin-left: 0px;
+        }
+        .foto-principal-nico{
+            margin-right: 0px;
+        }
+        .boton-general{
+            padding: 10px;
+            margin: 10px;
+            width: 150px;
+        }
+
+    /* 2 */
+        .tercer-contenedor{
+            padding: 60px;
+        }
+        #caja-mis-trabajos{
+            grid-template-columns: repeat(2, 240px);
+            padding-bottom: 0px 0px 0px 0px;
+        }
+        #titulo-mis-trabajos img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+        }  
+        .caja-boton-trabajos{
+            padding: 30px;
+        }
+    }
+
+
+    @media only screen and (min-width: 992px){
+      .nombre-nico{
+          width: 80%;
+          margin-left: 0px;
+      }
+      .foto-principal-nico{
+          margin-right: 20px;
+      }
+      .boton-general{
+          padding: 10px;
+          margin: 10px;
+          width: 150px;
+      }
+  /* 2 */
+      .tercer-contenedor{
+          padding: 70px;
+          width: 100%;
+      }
+      #caja-mis-trabajos{
+          padding-bottom: 0px;
+          grid-template-columns: repeat(2, 240px);
+      }
+      #titulo-mis-trabajos img{
+          padding-right: 140px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 300px;
+      }  
+      .caja-boton-trabajos{
+          padding: 50px;
+      }
+  }
+  
+  @media only screen and (min-width: 1200px){
+      .nombre-nico{
+          width: 80%;
+          margin-left: 40px;
+      }
+      .foto-principal-nico{
+          margin-right: 60px;
+      }
+      .boton-general{
+          padding: 20px;
+          margin: 15px;
+          width: 200px;
+      }
+
+  /* 3 */
+      .tercer-contenedor{
+          padding: 70px;
+      }
+      #caja-mis-trabajos{
+          grid-template-columns: repeat(3, 240px);
+          padding-bottom: 0px 0px 0px 0px;
+      }
+      #titulo-mis-trabajos img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 400px;
+      }  
+      .caja-boton-trabajos{
+          padding: 50px;
+      }
+  }
