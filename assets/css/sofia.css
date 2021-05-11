@@ -873,16 +873,14 @@ p{
     .nombre-sofi{
         margin-right: 130px;
         width: 60%;
-        padding-bottom: 100px;
+        margin-top: 60px;
     }
 
     .nombre-sofi img{
         width: 70%;
         margin-right: 200px;
     }
-    #boton-sm{
-        display: none;
-    }
+   
     p{
         width: calc(100% - 250px);
     }
