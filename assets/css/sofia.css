@@ -788,8 +788,8 @@ p{
     }
     .boton-general{
         padding: 20px;
-        margin: 0px;
-        width: 200px;
+        margin-right: 10px;
+        width: 170px;
         font-size: 18px;
     }
 
@@ -855,14 +855,15 @@ p{
     #primer-contenedor{
         display: flex;
         justify-content: space-between;
-        height: 86vh;
+        height: 100%;
     }
     .costadoizq-foto{
         margin-right: 200px;
     }
     .nombre-sofi{
         margin-right: 130px;
-        width: 80%;
+        width: 60%;
+        padding-bottom: 100px;
     }
 
     .nombre-sofi img{
@@ -881,7 +882,7 @@ p{
     }
 
     .foto-principal-sofi img{
-        width: 100%;
+        width: 90%;
     }
     
     
