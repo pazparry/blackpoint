@@ -48,7 +48,7 @@ p{
     position: absolute;
     bottom: 0;
     right: 20px;
-    top: 170px;
+    top: 0px;
 }
 .foto-principal-sofi img{
     width: 100%;
@@ -532,7 +532,6 @@ p{
     .foto-principal-sofi{
         margin-right: 0px;
         height: 86vh;
-        width: 0;
         display: block;
         visibility: visible;
     }
@@ -635,14 +634,13 @@ p{
 @media only screen and (min-width: 768px){
     #primer-contenedor{
         display: flex;
-        justify-content: space-between;
     }
     .costadoizq-foto{
         margin-right: 200px;
     }
     .nombre-sofi{
         width: 70%;
-        margin-right: 100px;
+        margin-right: 120px;
     }
 
     .nombre-sofi img{
@@ -652,12 +650,12 @@ p{
     p{
         font-size: 18px;
         width: calc(100% - 80px);
+        margin: 20px 20px 0 ;
     }
 
     .foto-principal-sofi{
-        margin-right: 0px;
         height: 85vh;
-        visibility: visible;
+        margin-top: 140px;
     }
 
     .foto-principal-sofi img{
@@ -666,10 +664,8 @@ p{
     
     
     .primeros-botones{
-       display: flex;
-       justify-content: center;
        gap: 30px;
-       margin-left: 0;
+       right: 80px;
     }
     .boton-general{
         padding: 20px;
@@ -758,10 +754,12 @@ p{
         justify-content: space-between;
     }
     .costadoizq-foto{
-        margin-right: 200px;
+        margin-right: 80px;
     }
     .nombre-sofi{
-        margin-right: 130px;
+        margin-right: 220px;
+        margin-top: 150px;
+        width: 60%;
     }
 
     .nombre-sofi img{
@@ -864,10 +862,12 @@ p{
     }
     .nombre-sofi{
         margin-right: 130px;
+        width: 80%;
     }
 
     .nombre-sofi img{
-        width: 75%;
+        width: 70%;
+        margin-right: 200px;
     }
 
     p{
@@ -875,9 +875,9 @@ p{
     }
 
     .foto-principal-sofi{
-        margin-right: 100px;
+        margin-right: 90px;
         height: 89vh;
-        margin-top:0;
+        margin-top:105px;
     }
 
     .foto-principal-sofi img{
