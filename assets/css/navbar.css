@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -30,7 +30,7 @@ nav img{
 .navbar-ul li{
     list-style:none;
     display: inline-block;
-    padding: 0rem 1.5rem;
+    padding: 0rem 1rem;
 }
 .navbar-ul li a{
     color: ghostwhite;
@@ -38,6 +38,7 @@ nav img{
     display: inline-block;
     border-bottom: solid;
     border-color: transparent;
+    font-size: 1em;
 }
 nav a:hover{
     border-bottom: solid;
