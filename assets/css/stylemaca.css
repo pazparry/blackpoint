@@ -307,7 +307,7 @@ img{
 /* 3 */
 
     .tercer-contenedor{
-        padding: 40px;
+        padding: 60px;
         width: 100%;
     }
     #caja-mis-trabajos{
@@ -371,7 +371,7 @@ img{
     }
 /* 3 */
     .tercer-contenedor{
-        padding: 40px;
+        padding: 60px;
         width: 100%;
     }
     #caja-mis-trabajos{
@@ -422,7 +422,7 @@ img{
     }
 /* 3 */
     .tercer-contenedor{
-        padding: 40px;
+        padding: 70px;
         width: 100%;
     }
     #caja-mis-trabajos{
@@ -433,7 +433,7 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 350px;
+        width: 400px;
     }  
     .caja-boton-trabajos{
         padding: 50px;
@@ -473,7 +473,7 @@ img{
     }
 /* 3 */
     .tercer-contenedor{
-        padding: 40px;
+        padding: 70px;
         width: 100%;
     }
     #caja-mis-trabajos{
@@ -484,7 +484,7 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 350px;
+        width: 400px;
     }  
     .caja-boton-trabajos{
         padding: 50px;
