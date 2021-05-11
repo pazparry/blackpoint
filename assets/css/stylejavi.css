@@ -2,6 +2,10 @@
     margin: 0%;
 }
 
+html,body{
+    overflow-x: hidden;
+}
+
 body{
     background-color: grey; /*Color de todo el background, esto sirve para cuando le pongo margin no se vea otro color de fondo*/
 }
@@ -15,6 +19,10 @@ p{
      
 b{
     color: #fac710;
+}
+
+.nav-prueba .body{
+    background-color: black;
 }
 
 /*************************************** Profile con saludo y botones ***************************************/                      
@@ -188,6 +196,9 @@ b{
 
 /* Laptop*/
 @media only screen and (min-width: 1025px) {
+    .navbar {
+        background-color:black;
+    }     
 
     .container-profile{
         grid-template-columns: 1fr .5fr;
@@ -275,6 +286,9 @@ b{
 
 /*Ipad*/
 @media only screen and (min-device-width : 769px) and (max-device-width :1024px) {   
+    .navbar {
+        background-color:black;
+}  
 
     .container-profile{
         margin: 0%;
@@ -295,7 +309,7 @@ b{
     .featured-img {
         grid-column: 2/3;
         grid-row: 1/2;
-        width: 100%;
+        width: 50%;
         position: relative;
         top: -30%; 
     }
@@ -308,7 +322,7 @@ b{
         align-content: space-around;
         position: relative;
         top: -50%;
-        left: 15%;  
+        left: 5%;  
     }  
 
     .button-log{
@@ -373,9 +387,12 @@ b{
     /*Mobile*/
     @media only screen and (min-device-width : 320px) and (max-device-width :768px) {   
 
+    .navbar {
+            background-color:black;
+    }  
+
     .container-profile{
         grid-template-rows: 0.1fr 1fr 1fr;
-        margin: auto;
     }
 
     .name-img{
@@ -401,18 +418,19 @@ b{
     .featured-img {
         grid-row: 1/2;
         position: relative;
+        width: 30%;
         left: 30%;
     }
 
     .featured-img img{
-        width: 30%;
+        width: 100%;
     }
 
     .buttons-01{
         grid-row: 3/4;
         grid-gap: 1.5rem;
         position: relative;
-        left: 2.5%;
+        left: -5%;
         top: 15%;
     }
 
