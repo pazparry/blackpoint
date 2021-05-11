@@ -17,6 +17,17 @@
     width: 90%;
     margin: auto;
 }
+.redes-paz{
+    color: var(--yellow);
+    justify-content: center;
+    text-align: left;
+}
+.icono-paz{
+    margin: auto 1rem auto 0;
+    font-size: 2rem;
+    color: var(--yellow);
+    text-decoration: none;
+}
 /* Grid */
 .grid{
     position: relative;
@@ -102,3 +113,44 @@ a {
     right: -30px;
     top: -30px;
 }
+/*
+Poner en un @media
+.foto-paz{
+    width: 60%;
+} */
+@media screen and (max-width: 576px){
+    .container-paz{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    .titulo-portafolio{
+        margin-top: 1rem;
+        width: 50%;
+    }
+    .foto-paz{
+        width: 100%;
+    }
+    .texto-bajada{
+        display: none;
+    }
+}
+@media screen and (min-width: 498px){
+   .redes-paz-mobile{
+       display: none;
+   }
+   
+}
+@media screen and (max-width: 497px){
+    .redes-paz-mobile{
+        text-align: center;
+        align-content: center;
+        color: var(--yellow);
+        justify-content: center;
+        margin: auto 1rem auto 0;
+        font-size: 2rem;
+       }
+       .redes-paz{
+        display: none;
+    }
+}
+

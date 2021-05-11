@@ -79,7 +79,7 @@
     width: 100%;
     margin-left: 15px;
 }
-p{
+.texto p{
     margin-left: 40px;
     font-size: 20px;
     text-align: justify;
@@ -156,6 +156,117 @@ img{
     color: var(--grey);
     font-weight: 800;
 }
+/* IMAGENES MIS TRABAJOS -------------------------------------------------------------- */
+.general-trabajos{
+    background-size: cover;
+    background-blend-mode: saturation;
+    border-radius: 50%;
+    height: 240px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-weight: bold; 
+  }
+  .general-trabajos p{
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+
+    padding: 10px;
+    border-radius: 100px;
+    background:#fac710b9;
+    line-height:20px
+  }
+  .general-trabajos:hover p{
+    background: transparent;
+  } 
+  #schlagfix1{
+      background-image: linear-gradient(white, white), url('../img/1fila\ 1-01.jpg');
+  }
+  #schlagfix1:hover{
+      background-image: url('../img/1fila\ 1-01.jpg');
+      transform: scale(1.2);
+      color: transparent;
+  }
+   
+  #schlagfix2 {
+    background-image: linear-gradient(white, white), url('../img/1fila\ 2-01.jpg');
+  }
+  #schlagfix2:hover{
+      background-image: url('../img/1fila\ 2-01.jpg');
+      transform: scale(1.2);
+      color: transparent;  
+  }
+  
+  #schlagfix3 {
+    background-image: linear-gradient(white, white), url('../img/1fila\ 3-01.jpg');
+  }
+  #schlagfix3:hover{
+      background-image: url('../img/1fila\ 3-01.jpg');
+      transform: scale(1.2);
+      color: transparent; 
+  }
+   
+
+  #packaging1 {
+    background-image: linear-gradient(white, white), url('../img/02fila 1-01.jpg');
+  }
+  #packaging1:hover{
+      background-image: url('../img/02fila 1-01.jpg');
+      transform: scale(1.2);
+      color: transparent;
+      
+  }
+  #packaging2 {
+    background-image: linear-gradient(white, white), url('../img/02fila 2-01.jpg');
+  }
+  #packaging2:hover{
+      background-image: url('../img/02fila 2-01.jpg');
+      transform: scale(1.2);
+      color: transparent;
+     
+  }
+  #packaging3 {
+    background-image: linear-gradient(white, white), url('../img/02fila 3-01.jpg');
+  }
+  #packaging3:hover{
+      background-image: url('../img/02fila 3-01.jpg');
+      transform: scale(1.2);
+      color: transparent;
+      
+  }
+
+  #papeleria1 {
+    background-image: linear-gradient(white, white), url('../img/3fila 1.jpg');
+  }
+  #papeleria1:hover{
+      background-image: url('../img/3fila 1.jpg');
+      transform: scale(1.2);
+      color: transparent;
+     
+  }
+  #papeleria2 {
+    background-image: linear-gradient(white, white), url('../img/3fila 2.jpg');
+  }
+  #papeleria2:hover{
+      background-image: url('../img/3fila 2.jpg');
+      transform: scale(1.2);
+      color: transparent;
+     
+  } 
+  #papeleria3 {
+    background-image: linear-gradient(white, white), url('../img/3fila 3.jpg');
+  }
+  #papeleria3:hover{
+      background-image: url('../img/3fila 3.jpg');
+      transform: scale(1.2);
+      color: transparent;
+      
+  }
+  
 /* FOOTER RECUADRO --------------------------------------------------------------------- */
 .footer-basic{
     background-color: var(--yellow);
@@ -237,7 +348,7 @@ img{
         width: 100%;
         margin-left: 0px;
     }
-    p{
+    .texto p{
         margin-left: 0px;
         font-size: 16px;
         width: 100%;
@@ -297,7 +408,7 @@ img{
     .contenedorsaludo-texto{
         margin-left: 0px;
     }
-    p{
+    .texto p{
         font-size: 14px;
         margin: 1px 1px 1px 20px;
     }
@@ -307,7 +418,7 @@ img{
 /* 3 */
 
     .tercer-contenedor{
-        padding: 40px;
+        padding: 60px;
         width: 100%;
     }
     #caja-mis-trabajos{
@@ -362,7 +473,7 @@ img{
     .contenedorsaludo-texto{
         margin-left: 0px;
     }
-    p{
+    .texto p{
         font-size: 14px;
         margin: 1px 1px 1px 20px;
     }
@@ -371,7 +482,7 @@ img{
     }
 /* 3 */
     .tercer-contenedor{
-        padding: 40px;
+        padding: 60px;
         width: 100%;
     }
     #caja-mis-trabajos{
@@ -413,7 +524,7 @@ img{
     .contenedorsaludo-texto{
         margin-left: 0px;
     }
-    p{
+    .texto p{
         font-size: 18px;
         margin: 1px 1px 1px 20px;
     }
@@ -422,7 +533,7 @@ img{
     }
 /* 3 */
     .tercer-contenedor{
-        padding: 40px;
+        padding: 70px;
         width: 100%;
     }
     #caja-mis-trabajos{
@@ -433,7 +544,7 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 350px;
+        width: 400px;
     }  
     .caja-boton-trabajos{
         padding: 50px;
@@ -464,7 +575,7 @@ img{
     .contenedorsaludo-texto{
         margin-left: 0px;
     }
-    p{
+    .texto p{
         font-size: 22px;
         margin-left: 40px;
     }
@@ -473,7 +584,7 @@ img{
     }
 /* 3 */
     .tercer-contenedor{
-        padding: 40px;
+        padding: 70px;
         width: 100%;
     }
     #caja-mis-trabajos{
@@ -484,7 +595,7 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 350px;
+        width: 400px;
     }  
     .caja-boton-trabajos{
         padding: 50px;

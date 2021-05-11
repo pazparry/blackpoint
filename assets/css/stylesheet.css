@@ -87,7 +87,7 @@ a{
     top: 156px;
 }
 .avatar1{
-    background-image: url(../../assets/img/javiera.jpeg);
+    background-image: url(../../assets/img/javiera.jpg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -172,7 +172,7 @@ a{
     filter: none;
 }
 .avatar5{
-    background-image: url(../../assets/img/sofia.jpeg);
+    background-image: url(../../assets/img/sofia.jpg);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -204,6 +204,7 @@ a{
     font-size: 1rem;
     font-weight: bold;
     margin: 8% 0px;
+    cursor: pointer;
 }
 .nombre{
     width: 60%;
@@ -246,7 +247,6 @@ body{
     width:100vw;
     height:100vh;
     position: relative;
-    z-index: -98;
     margin-top: 3rem;
 }
 h3{
@@ -345,6 +345,11 @@ input{
     box-sizing: border-box;
 }
 input[type=submit]{
+    font-style: normal;
+    background-color: var(--yellow);
+    font-weight: bolder;
+}
+.btn-form{
     font-style: normal;
     background-color: var(--yellow);
     font-weight: bolder;
