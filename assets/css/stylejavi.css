@@ -1,7 +1,8 @@
 /*************************************** Elementos en comun en la página ***************************************/                      
 *{
     margin: 0%;
-    padding: 0%;    
+    padding: 0%;
+    box-sizing: border-box;    
 }
 
 body{
@@ -12,6 +13,9 @@ body{
 p{    
     color:#fcfcfc;
     text-align: justify;
+    font-size: 20px;
+
+    line-height: 2;
 
 }
      
@@ -23,19 +27,24 @@ b{
 
 .container-profile{
     background-color:black;
-    margin-bottom: 70px;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    grid-template-rows: 300px 400px;
     align-items: center;
+    flex-direction:row;
+
+    justify-content: space-between;
+    max-width: auto;
+    margin: 0 auto;
+    margin-top: 0px;
+
+    gap: 1rem;
 }
      
 .name-img{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width: 60%;
     padding: 1rem;
+    grid-row: 1/3;
 } 
 
 .name-img img{
@@ -43,21 +52,37 @@ b{
 }
 
 .featured-img{
-    width: 40%;
     padding: 1rem;
+    grid-column: 2/3;
+    grid-row: 1/3;
 }
+
 .featured-img img{
     width: 100%;
 }
 
 .container-text{
-    display: flex;
 
 }
 
+
 .buttons-01{
     display: flex;
-    justify-content: space-between;
+
+    justify-content: center;
+    padding: 1rem;
+}
+
+.button-log{
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
+
+.button-cv{ 
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
 }
 
 .button-log{
@@ -99,47 +124,43 @@ b{
     color: black;
 }
  
-/*************************************** Portafolio ***************************************/                      
+/*************************************** Portafolio ***************************************/                   
      
 .container-portfolio{
     display: flex;
     align-items: center;
+    flex-direction:row;
+
     justify-content: space-between;
-    background-color:grey;
-    margin-top: 70px;
+    max-width: auto;
+    margin: 0 auto;
+    margin-top: 0px;
+
+    background-color: black;
 }
      
 .proyectos{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    margin-left: 50px;
+    padding: 1rem;
+    width: 100%;
 } 
      
 .container-photos{
-    display: grid;
-    grid-template-columns: repeat(3, 500px);
     justify-content: center;
-    align-items: center;
     gap: 70px;
-    margin-top: 70px;
-    background-color: grey;
-    padding-bottom: 70px;
 }
          
 .photos{
-    height: 500px;
-    width: 500px;
-    transition: all 0.4s;       
     position: relative;
 }
      
 .photos img{
-    border-radius: 20%;    
+    border-radius: 20%;   
+     
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    filter: none;
 }
 
 /*************************************** Condiciones para el hover en las imagenes del portafolio ***************************************/                      
@@ -163,40 +184,46 @@ b{
     background-color: rgba(0,0,0,0.9);
     color: white;
     font-size: 20px;
-     
+
+    display: flex;
+
     text-align:center;
+    justify-content: center;
+
     align-items: center;
     position: absolute;
 
     top: 50%;
-    left: 50%;
+    left: 40%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 80%;
     height: 100%;
 
     border-radius: 20%;   
-    display: flex;
-    justify-content: center; 
 }  
 
 .btn-trailer{
+    display: flex;
+
     text-align:center;
+    justify-content: center;
+
     align-items: center;
     position: absolute;
 
-    top: 50%;
-    left: 50%;
+    top: 80%;
+    left: 40%;
+
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
 
+    padding: 1rem;
     border-radius: 20%;   
-    display: flex;
-    justify-content: center; 
 } 
 
 .button-trailer{
@@ -204,11 +231,8 @@ b{
     border: 2px solid black; 
     border-radius: 15px;
 
-    position: absolute;
-    top: 65%;
-
     padding: 10px;
-    width: 70px;
+    width: 100px;
     margin: 10px; 
 }
 
@@ -216,75 +240,113 @@ b{
     color: black;
     font-size: 20px;
     justify-content: center; 
+    padding: 1rem;
 }
 
-/*************************************** Responsive ***************************************/                      
-/* Extra large devices (large laptops and desktops, 1800px and up) */
-@media only screen and (min-width: 992px) {
-    p{    
-        font-size: 20px;
-        
-        line-height: 2;
-        margin-left: 40px;
+/*************************************** Responsive ***************************************/ 
+
+/* Laptop*/
+@media only screen and (min-width: 1024px) {
+
+    .name-img img{
+        max-width:45vw;
+        height:auto;
     }
 
-    .container-profile{
-        justify-content: space-between;
-        max-width: 100vw;
-        margin: 0 auto;
-        margin-top: 0px;
-    } 
+    .featured-img{
+        grid-row: 1/3;
+        width: 90%;
+        margin: 0 auto;  
+    }
 
     .container-text{
         padding: 50px;
-        width: 80%;
+    }
+    
+    .proyectos{
+        gap: 50px;
+    }
+
+    .name-img img{
+        width:100%;
+        height:auto;
+        max-width: 500px;
+        min-width: 100px;
+    }
+
+    .container-photos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .photos{
+        width: 100%;
+    }
+
+    .photos img{
+        max-width: 80%;
+        object-fit: cover;
+
+    }
+
+}
+
+/*Ipad*/
+@media only screen and (min-device-width : 769px) and (max-device-width :1024px) {   
+    
+    .container-profile{
+        flex-direction :row;
+    }
+
+    
+    .name-img img{
+        width: 100%;
+        justify-content:center;
+    }
+
+    .featured-img{
+        grid-row: 1/2;
+        width: 90%;
+        margin: 0 auto;   
     }
     
     .buttons-01{
         gap: 50px;
     }
-    .button-log{
-        margin: 20px;
-        padding: 20px;
-        width: 200px;
-    }
-    
-    .button-cv{ 
-        margin: 20px;
-        padding: 20px;
-        width: 200px;
-    }
 }
 
-/*@media only screen and (min-width: 992px) {
-    p{    
-        font-size: 20px;
-    
-        line-height: 2;
-        margin-left: 40px;
-    }
-
+    /*Mobile*/
+    @media only screen and (min-device-width : 320px) and (max-device-width :768px) {   
     .container-profile{
-        margin-top: 0px;
-    }  
+        flex-direction : column-reverse;
+    }
 
-    .container-text{
-        padding: 50px;
+    .name-img {
+        width:100%;
+    }
+    
+    .name-img img { 
         width: 80%;
+        justify-content:center;
+
     }
-    
+
+    .featured-img {
+        width:100%;
+
+    }
+
+    .featured-img image{
+        justify-content: center;
+    }
+
     .buttons-01{
-        gap: 50px;
+        width:100%;
+        flex-direction:column;
     }
-    .button-log{
-        margin: 20px;
-        padding: 20px;
-        width: 200px;
+
+    .buttons-01 a{
+        width: 100%;
+        box-sizing: border-box;
     }
-    
-    .button-cv{ 
-        margin: 20px;
-        padding: 20px;
-        width: 200px;
-    }*/
 }
