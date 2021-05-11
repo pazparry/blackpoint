@@ -204,6 +204,7 @@ a{
     font-size: 1rem;
     font-weight: bold;
     margin: 8% 0px;
+    cursor: pointer;
 }
 .nombre{
     width: 60%;
