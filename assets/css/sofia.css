@@ -405,6 +405,8 @@ p{
 @media only screen and (max-width: 575px){
     #primer-contenedor{
         text-align: center;
+        margin-top: 57px;
+        height: 93vh;
     }
     
     .nombre-sofi{
@@ -413,10 +415,12 @@ p{
 
     p{
         font-size: 15px;
-        margin: 50px auto 0;
+        margin: 10px auto 0;
         width: calc(100% - 100px);
     }
-
+    #boton-sm{
+        display: none;
+    }
     .foto-principal-sofi{
         display: none;
         visibility: hidden;
@@ -425,10 +429,10 @@ p{
     
     .primeros-botones{
        display: flex;
-       flex-direction: column;
-       gap: 10px;
+       flex-direction: row;
        right: 0;
-       top: 30px;
+       top: 10px;
+       justify-content: center;
     }
     .boton-general{
         padding: 15px;
@@ -509,17 +513,21 @@ p{
 @media only screen and (min-width: 576px){
     #primer-contenedor{
         flex-direction: column;
-        height: 82vh;
+        height: 100%;
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding-bottom: 10px;
     }
     
     .nombre-sofi{
         width: 100%;
     }
-
+    #boton-lg{
+        display: none;
+    }
+    #boton-sm{
+        margin-bottom: 100px;
+    }
     p{
         color: var(--white);
         text-align: justify;
@@ -543,10 +551,10 @@ p{
     
     .primeros-botones{
         display: flex;
-       justify-content: space-between;
-       gap: 20px;
-       padding: 0;
-       right: 0;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        right: 0;
     }
     .boton-general{
         padding: 15px;
@@ -634,9 +642,11 @@ p{
 @media only screen and (min-width: 768px){
     #primer-contenedor{
         display: flex;
+        margin-top: 154px;
     }
     .costadoizq-foto{
         margin-right: 200px;
+        
     }
     .nombre-sofi{
         width: 70%;
@@ -659,7 +669,8 @@ p{
     }
 
     .foto-principal-sofi img{
-        width: 90%;
+        width: 77%;
+        margin-right: 0px;
     }
     
     
@@ -668,7 +679,6 @@ p{
        right: 80px;
     }
     .boton-general{
-        padding: 20px;
         margin: 0px;
         width: 100px;
         font-size: 15px;
@@ -870,7 +880,9 @@ p{
         width: 70%;
         margin-right: 200px;
     }
-
+    #boton-sm{
+        display: none;
+    }
     p{
         width: calc(100% - 250px);
     }
